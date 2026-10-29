@@ -1,1 +1,50 @@
-[]
+[
+    {
+        "no": "1",
+        "nama": "PDH KBM FT",
+        "harga": 165000,
+        "stok": 5
+    },
+    {
+        "no": "2",
+        "nama": "Kaos FT",
+        "harga": 100000,
+        "stok": 64
+    },
+    {
+        "no": "3",
+        "nama": "Gantungan Kunci FT",
+        "harga": 20000,
+        "stok": 50
+    },
+    {
+        "no": "4",
+        "nama": "Slayer FT",
+        "harga": 35000,
+        "stok": 25
+    },
+    {
+        "no": "5",
+        "nama": "Sticker FT",
+        "harga": 5000,
+        "stok": 27
+    },
+    {
+        "no": "6",
+        "nama": "Kaos Kaki FT",
+        "harga": 15000,
+        "stok": 1
+    },
+    {
+        "no": "56",
+        "nama": "45",
+        "harga": 454545,
+        "stok": 45454545
+    },
+    {
+        "no": "9",
+        "nama": "45",
+        "harga": 4,
+        "stok": 4
+    }
+]
