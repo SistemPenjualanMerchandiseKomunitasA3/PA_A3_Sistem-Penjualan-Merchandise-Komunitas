@@ -276,11 +276,11 @@ Cuplikan ini menunjukan proses untuk kembali ke menu utama admin.
 
 ## LOGIN SEBAGAI USER
 
-<img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/9264bd49-ee1e-481b-85e1-a798826feee1" />
+<img width="417" height="208" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/9264bd49-ee1e-481b-85e1-a798826feee1" />
 <br>
-<img width="389" height="131" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/e1c9cb1b-bd65-4ce9-a9d6-e02939ee493a" />
+<img width="417" height="208" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/e1c9cb1b-bd65-4ce9-a9d6-e02939ee493a" />
 <br>
-<img width="407" height="131" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/60a3e244-b005-491b-8022-95e33b440566" />
+<img width="417" height="208" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/60a3e244-b005-491b-8022-95e33b440566" />
 <br>
 <img width="417" height="208" alt="Screenshot 2026-10-30 001417" src="https://github.com/user-attachments/assets/d58146d6-b705-40b0-bce2-99c7ed92a7ec" />
 
