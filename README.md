@@ -160,4 +160,27 @@ Function ini merupakan menu khusus untuk mengelola data barang atau yang biasa d
 
 Function ini digunakan untuk menampilkan invoice sebagai bukti transaksi yang dilakukan oleh pengguna. Di dalam function ini, kami menggunakan PrettyTable dengan dua kolom, yaitu keterangan dan detail. Informasi yang ditampilkan meliputi kode transaksi, waktu transaksi, username, jenis transaksi, detail transaksi, total pembayaran, dan sisa saldo setelah transaksi. Seluruh informasi tersebut diambil dari parameter data yang dikirimkan oleh function pemanggil. Contohnya, setelah pengguna berhasil melakukan pembelian Kaos FT sebanyak dua buah, program akan menampilkan invoice yang berisi total pembayaran sebesar Rp200.000 beserta sisa saldo pengguna.
 
+<img width="453" height="437" alt="image" src="https://github.com/user-attachments/assets/1cdda88c-14e1-4f7d-b8d1-92c1f601df4d" />
+<br>
+<img width="655" height="625" alt="image" src="https://github.com/user-attachments/assets/13662eb8-f151-4643-bc5f-bb33c05840ab" />
+<br>
+<img width="588" height="86" alt="image" src="https://github.com/user-attachments/assets/35989e57-7205-4de3-a26b-b5ea0022cfb9" />
+
+Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, program akan membaca data pengguna dari file user.json dan data transaksi dari file transaksi.json. Setelah itu, program akan mencari akun berdasarkan username yang sedang login. Jika akun ditemukan, program akan menampilkan saldo saat ini. Kemudian, pengguna diminta memasukkan nominal top up. Pada bagian ini terdapat validasi menggunakan try-except untuk memastikan nominal yang dimasukkan berupa angka bulat, minimal Rp1, dan maksimal Rp10.000.000. Setelah nominal sesuai, program akan meminta konfirmasi kepada pengguna. Jika pengguna menyetujui, saldo akan ditambahkan dan data akun disimpan kembali ke user.json. Selanjutnya, program akan membuat kode transaksi yang terdiri dari awalan TRX, tiga angka acak, dan nomor urut transaksi. Data transaksi kemudian disimpan ke dalam transaksi.json dan ditampilkan melalui function cetak_invoice(). Contohnya, pengguna memiliki saldo Rp50.000 dan melakukan top up sebesar Rp100.000. Setelah berhasil, saldo pengguna akan menjadi Rp150.000 dan sistem akan menampilkan invoice top up.
+
+<img width="413" height="623" alt="image" src="https://github.com/user-attachments/assets/521b6dbf-c130-47ce-a725-d4c6d3925592" />
+<br>
+<img width="449" height="597" alt="image" src="https://github.com/user-attachments/assets/f682bc3a-e65f-42da-aea8-9a120d3d092d" />
+<br>
+<img width="401" height="560" alt="image" src="https://github.com/user-attachments/assets/e77226d3-b664-4fbb-a23e-2da6cd36973b" />
+<br>
+<img width="365" height="257" alt="image" src="https://github.com/user-attachments/assets/8c24d433-2637-4f7f-8889-29d571a3d87b" />
+
+Function ini digunakan oleh pengguna untuk melakukan pembelian barang yang tersedia di dalam sistem. Pertama, program akan membaca data pengguna, barang, dan transaksi dari masing-masing file JSON. Kemudian, program akan mencari akun pengguna berdasarkan username yang sedang login dan menampilkan daftar barang menggunakan PrettyTable. Setelah itu, pengguna diminta memasukkan nomor barang yang ingin dibeli. Program akan memeriksa apakah barang ditemukan, apakah stok masih tersedia, dan apakah jumlah pembelian tidak melebihi stok yang tersedia. Selanjutnya, program menghitung total pembayaran dengan mengalikan harga barang dan jumlah pembelian. Sebelum pembayaran dilakukan, program akan memeriksa apakah saldo pengguna mencukupi. Jika saldo mencukupi, pengguna akan diminta memberikan konfirmasi pembayaran. Apabila pengguna menyetujui, saldo akan dikurangi sesuai total pembelian dan stok barang juga akan berkurang sesuai jumlah yang dibeli. Terakhir, perubahan data pengguna dan barang akan disimpan ke dalam file JSON. Program juga akan membuat data transaksi baru dan menampilkan invoice sebagai bukti pembelian. Contohnya, pengguna membeli dua Kaos FT dengan harga masing-masing Rp100.000. Maka total pembayaran adalah Rp200.000. Jika saldo mencukupi dan pengguna menyetujui pembayaran, saldo akan berkurang Rp200.000 dan stok barang berkurang sebanyak dua buah.
+
+
+
+
+
+
 # Screenshot Output
