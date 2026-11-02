@@ -16,7 +16,7 @@ Proses pembelian dilakukan menggunakan saldo pengguna. Program akan memeriksa ke
 
 # Flowchart
 
-**1. Registrasi dan Login**
+## Registrasi dan Login**
    
    <img width="1732" height="1484" alt="FlowchartPAKel3-REGIS DAN LOGIN (1)" src="https://github.com/user-attachments/assets/cf1ab9a8-b744-4972-ab1e-928772321608" />
 
@@ -24,7 +24,7 @@ Flowchart registrasi dan login menjelaskan proses awal penggunaan program. Siste
 
 Pada proses login, sistem mencocokkan data yang dimasukkan dengan data user yang tersimpan. Jika data sesuai, user diarahkan ke halaman berdasarkan perannya. Jika data tidak sesuai, sistem menampilkan pesan kesalahan dan memberikan kesempatan untuk mencoba kembali hingga batas percobaan yang ditentukan.
 
-**2. CRUD**
+##CRUD
 
    <img width="2232" height="1090" alt="_FlowchartPAKel3-CRUD" src="https://github.com/user-attachments/assets/38b53588-e73f-4977-9974-8940de97173c" />
 
@@ -32,7 +32,7 @@ Flowchart pengelolaan barang menggambarkan proses yang dapat dilakukan admin unt
 
 Program juga melakukan pemeriksaan terhadap data yang dimasukkan, seperti ID barang dan informasi barang lainnya. Jika barang tidak ditemukan atau data tidak sesuai, sistem menampilkan pesan yang relevan.
 
-**3. Halaman Admin**
+## Halaman Admin
 
    <img width="1772" height="887" alt="_FlowchartPAKel3-Halaman Admin" src="https://github.com/user-attachments/assets/0d0094b0-af69-4197-8117-dd6c1041c926" />
 
@@ -40,7 +40,7 @@ Flowchart halaman admin menjelaskan pilihan menu yang tersedia setelah administr
 
 Pada fitur laporan penjualan, sistem membaca data transaksi dari transaksi.json, kemudian menghitung informasi penjualan yang tersedia. Hasilnya ditampilkan agar admin dapat memantau pendapatan, jumlah transaksi pembelian, dan barang yang paling banyak terjual.
 
-**4. Halaman User**
+## Halaman User
 
 <img width="2031" height="957" alt="FlowchartPAKel3-Halaman User (1)" src="https://github.com/user-attachments/assets/c778759f-8581-456f-9f21-e9b32d4c0a1e" />
 
