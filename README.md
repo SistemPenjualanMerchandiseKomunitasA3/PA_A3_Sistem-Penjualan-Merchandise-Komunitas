@@ -49,42 +49,9 @@ Flowchart halaman user menjelaskan fitur yang dapat digunakan oleh user biasa. U
 Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. Jika persyaratan terpenuhi dan pembelian berhasil, sistem memperbarui saldo user, mengurangi stok barang, serta menyimpan transaksi. Jika stok atau saldo tidak mencukupi, sistem menampilkan pesan yang sesuai.
 
 
-# Fitur
-- Menu utama menampilkan pilihan login, registrasi, dan keluar. Program memproses pilihan pengguna dan menampilkan pesan jika pilihan tidak valid.
+# Program
 
-- Registrasi akun baru dengan menginput username dan password. Username tidak boleh kosong, harus memenuhi panjang minimum, dan tidak boleh sama dengan username yang sudah ada. Password juga harus memenuhi ketentuan program.
-
-- Login dengan batas tiga kali percobaan. User menginput username dan password. Jika data sesuai, sistem mengarahkan user ke menu berdasarkan perannya, yaitu admin atau user. Jika login gagal hingga tiga kali, sistem mengembalikan user ke menu utama.
-
-- Menampilkan daftar merchandise menggunakan PrettyTable. Informasi yang ditampilkan meliputi ID barang, nama merchandise, harga, dan stok yang tersedia.
-
-- CRUD barang untuk admin. Admin dapat menambah, melihat, mengubah, dan menghapus data merchandise. Setiap perubahan data barang disimpan ke dalam berkas barang.json agar dapat digunakan kembali ketika program dijalankan.
-
-- Menambah barang baru. Admin memasukkan ID, nama barang, harga, dan stok. Sistem memeriksa data yang dimasukkan sebelum menyimpan barang baru.
-
-- Mengubah data barang. Admin memilih barang berdasarkan ID, kemudian mengubah informasi yang diperlukan, seperti nama, harga, atau stok. Data yang telah diperbarui disimpan kembali ke barang.json.
-
-- Menghapus barang dengan konfirmasi. Admin memilih barang yang akan dihapus. Sistem meminta konfirmasi sebelum menghapus data agar admin dapat memastikan bahwa barang yang dipilih memang ingin dihapus.
-
-- Melihat daftar user. Admin dapat melihat informasi user yang telah terdaftar dalam sistem. Data tersebut dibaca dari berkas user.json dan ditampilkan dalam bentuk tabel.
-
-- Pengisian saldo (top up). User memasukkan nominal saldo yang ingin ditambahkan. Sistem memvalidasi nominal tersebut, memperbarui saldo user, lalu menyimpan perubahan data ke dalam user.json.
-
-- Pembelian merchandise dengan validasi stok dan saldo. User memilih barang berdasarkan ID dan memasukkan jumlah pembelian. Sistem memeriksa ketersediaan stok serta kecukupan saldo sebelum memproses transaksi.
-
-- Pencatatan transaksi ke berkas JSON. Transaksi yang berhasil dicatat ke dalam transaksi.json. Data transaksi digunakan untuk menyimpan informasi pembelian atau pengisian saldo dan mendukung fitur riwayat transaksi.
-
-- Menampilkan invoice transaksi. Setelah transaksi berhasil, sistem menampilkan ringkasan transaksi yang berisi informasi user, detail transaksi, total pembayaran, dan saldo setelah transaksi sesuai data yang tersedia pada program.
-
-- Riwayat transaksi user. User dapat melihat catatan transaksi miliknya sendiri. Sistem membaca data dari transaksi.json, kemudian menampilkan transaksi yang sesuai dengan nama user yang sedang login.
-
-- Laporan penjualan untuk admin. Admin dapat melihat ringkasan penjualan berdasarkan data transaksi yang tersimpan. Laporan mencakup total pendapatan dari pembelian, jumlah transaksi pembelian, dan barang terlaris sesuai perhitungan dalam program.
-
-- Error handling menggunakan try-except. Program menangani kesalahan tertentu, seperti input yang tidak sesuai dan masalah ketika membaca atau menyimpan data. Penanganan kesalahan membantu program memberikan pesan yang lebih jelas kepada pengguna.
-
-- Logout dan keluar program. Logout mengakhiri sesi pengguna dan mengembalikannya ke halaman login atau menu utama sesuai alur program. Sementara itu, pilihan keluar digunakan untuk menghentikan program.
-
-**Penyimpanan Data**
+## 1. Apalah
 
 | No | Library | Kegunaan |
 | :--- | :---: | :---: |
@@ -93,7 +60,11 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 | 3 | transaksi.json | Riwayat transaksi, kode transaksi, username, jenis transaksi, detail, total pembayaran, waktu, dan sisa saldo |
 
 
-**Library**
+## 2. Library
+
+<img width="587" height="86" alt="image" src="https://github.com/user-attachments/assets/1dffd19d-7e9c-472c-9b4b-cc75cf45b9b2" />
+
+<br>
 
 | No | Library | Kegunaan |
 | :--- | :---: | :---: |
