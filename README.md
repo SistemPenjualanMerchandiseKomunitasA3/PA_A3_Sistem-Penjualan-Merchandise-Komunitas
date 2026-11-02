@@ -62,7 +62,7 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 
 ## 2. Library
 
-<img width="587" height="86" alt="image" src="https://github.com/user-attachments/assets/1dffd19d-7e9c-472c-9b4b-cc75cf45b9b2" />
+<img width="833" height="86" alt="image" src="https://github.com/user-attachments/assets/1dffd19d-7e9c-472c-9b4b-cc75cf45b9b2" />
 
 <br>
 
@@ -102,19 +102,19 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 
 # Penjelasan Per Kode
 
-<img width="227" height="95" alt="image" src="https://github.com/user-attachments/assets/0c83eb96-3007-48a6-bc4d-c5ac3c26d05b" />
+<img width="833" height="95" alt="image" src="https://github.com/user-attachments/assets/0c83eb96-3007-48a6-bc4d-c5ac3c26d05b" />
 
 Di awal program ini kami menggunakan beberapa library dan modul seperti os, time, json, PrettyTable, pwinput, dan random. Os sendiri berfungsi untuk membersihkan tampilan layar terminal agar lebih bersih dan rapi. Time digunakan untuk memberikan jeda waktu pada program serta mendapatkan informasi tanggal transaksi. Json digunakan untuk membaca dan menyimpan data dalam format JSON. PrettyTable digunakan untuk menampilkan data dalam bentuk tabel agar lebih terstruktur. Pwinput digunakan untuk menyembunyikan karakter password ketika pengguna melakukan input. Terakhir, Random digunakan untuk menghasilkan angka secara acak yang nantinya digunakan sebagai bagian dari kode transaksi.
 
-<img width="149" height="40" alt="image" src="https://github.com/user-attachments/assets/d85bb076-9fbd-44ea-ab63-b873d9799db1" />
+<img width="833" height="40" alt="image" src="https://github.com/user-attachments/assets/d85bb076-9fbd-44ea-ab63-b873d9799db1" />
 
 Pada function ini kami menggunakan os.system("cls") yang berfungsi untuk membersihkan tampilan layar terminal. Tujuannya agar setiap kali pengguna berpindah dari satu menu ke menu lainnya, tampilan sebelumnya tidak menumpuk sehingga program terlihat lebih rapi. Contohnya, ketika pengguna selesai melakukan login dan masuk ke menu admin, layar terminal akan dibersihkan terlebih dahulu sebelum menu admin ditampilkan.
 
-<img width="225" height="127" alt="image" src="https://github.com/user-attachments/assets/8961ead8-7941-4b1a-a750-300f90a7d707" />
+<img width="833" height="127" alt="image" src="https://github.com/user-attachments/assets/8961ead8-7941-4b1a-a750-300f90a7d707" />
 
 Pada function ini kami membuat sebuah function khusus untuk menangani input dari pengguna. Di dalamnya terdapat perulangan while True serta percabangan try-except yang digunakan untuk menangani error ketika pengguna menekan tombol Ctrl+C atau terjadi EOFError. Jika salah satu kondisi tersebut terjadi, program akan menampilkan pesan "No No Yaa!" tanpa langsung menghentikan program. Contohnya, ketika program meminta pengguna memasukkan username kemudian pengguna menekan Ctrl+C, program akan menampilkan pesan tersebut dan kembali meminta input. Dengan adanya function ini, penanganan input dapat digunakan secara berulang di berbagai bagian program.
 
-<img width="488" height="332" alt="image" src="https://github.com/user-attachments/assets/3a5d3a05-f107-4dc3-82ef-506eefec45e9" />
+<img width="833" height="332" alt="image" src="https://github.com/user-attachments/assets/3a5d3a05-f107-4dc3-82ef-506eefec45e9" />
 
 Pada function ini, program akan menampilkan halaman menu utama dengan memberikan tiga pilihan, yaitu registrasi, login, dan keluar aplikasi. Di sini kami menggunakan perulangan while True agar menu dapat terus ditampilkan sampai pengguna memilih opsi keluar. Kemudian, terdapat percabangan if, elif, dan else untuk menentukan tindakan berdasarkan pilihan pengguna. Jika pengguna memilih angka 1, program akan menjalankan function registrasi(). Jika memilih angka 2, program akan menjalankan function login(). Sementara itu, jika memilih angka 3, program akan menampilkan pesan bahwa program selesai dan menghentikan perulangan menggunakan break. Apabila pengguna memasukkan pilihan selain ketiga opsi tersebut, program akan menampilkan pesan bahwa pilihan tidak tersedia.
 
