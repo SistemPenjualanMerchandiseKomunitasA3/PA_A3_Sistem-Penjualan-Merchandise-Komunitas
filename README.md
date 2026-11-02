@@ -140,7 +140,7 @@ Pada function ini kami membuat sebuah function khusus untuk menangani input dari
 
 ---
 
-4. Menu Utama
+## 4. Menu Utama
 
 ```python
 def menu_utama():
