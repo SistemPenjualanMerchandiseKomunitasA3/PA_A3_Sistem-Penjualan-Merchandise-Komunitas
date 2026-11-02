@@ -100,6 +100,33 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 
 
 
-# Daftar Fitur per Role
+# Penjelasan Per Kode
+
+<img width="227" height="95" alt="image" src="https://github.com/user-attachments/assets/0c83eb96-3007-48a6-bc4d-c5ac3c26d05b" />
+
+Library yang digunakan
+
+<img width="149" height="40" alt="image" src="https://github.com/user-attachments/assets/d85bb076-9fbd-44ea-ab63-b873d9799db1" />
+
+Berfungsi untuk membersihkan Terminal ketika selesai menggunakan menu
+
+<img width="225" height="127" alt="image" src="https://github.com/user-attachments/assets/8961ead8-7941-4b1a-a750-300f90a7d707" />
+
+Sebagai Error Handling saat User memasukkan input yang tidak sesuai serta ctrl + C dan ctrl + V
+
+<img width="488" height="332" alt="image" src="https://github.com/user-attachments/assets/3a5d3a05-f107-4dc3-82ef-506eefec45e9" />
+
+Menu Utama, Ditampilkan pertama kali saat program dimulai, Berfungsi untuk Regis dan Login serta Memberhentikan Program, Terdapat **else** sebagai Prevensi apabila input yang dimasukkan tidak sesuai dengan menu yang ada
+
+<img width="500" height="563" alt="image" src="https://github.com/user-attachments/assets/905ff3d4-bc26-4519-ab0d-9490c5dd4fa4" />
+<br>
+<img width="398" height="130" alt="image" src="https://github.com/user-attachments/assets/3c395444-6476-485d-b4b3-b6d89c73e887" />
+
+Berfungsi untuk Melakukan Registrasi, Program akan mengecek apakah Nama akun baru yang ingin di buat sudah ada di file JSON, Apabila sudah ada 
+
+
+
+
+
 
 # Screenshot Output
