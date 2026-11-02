@@ -73,7 +73,7 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 | 6 | random | Digunakan untuk menghasilkan nilai secara acak, misalnya untuk membuat kode atau nomor transaksi. |
 
 
-**Funcion**
+## 3. Funcion
 
 | No | Fungsi | Kegunaan |
 | :--- | :---: | :---: |
@@ -97,10 +97,9 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 
 
 
-# Penjelasan Per Kode
+# Alur Program
 
-
-
+1. Library
 ```python
 import os
 import time
@@ -112,6 +111,10 @@ import random
 
 Di awal program ini kami menggunakan beberapa library dan modul seperti os, time, json, PrettyTable, pwinput, dan random. Os sendiri berfungsi untuk membersihkan tampilan layar terminal agar lebih bersih dan rapi. Time digunakan untuk memberikan jeda waktu pada program serta mendapatkan informasi tanggal transaksi. Json digunakan untuk membaca dan menyimpan data dalam format JSON. PrettyTable digunakan untuk menampilkan data dalam bentuk tabel agar lebih terstruktur. Pwinput digunakan untuk menyembunyikan karakter password ketika pengguna melakukan input. Terakhir, Random digunakan untuk menghasilkan angka secara acak yang nantinya digunakan sebagai bagian dari kode transaksi.
 
+---
+
+2. Fungsi Membersihkan Terminal
+
 ```python
 def bersih():   
     os.system("cls")
@@ -119,6 +122,9 @@ def bersih():
 
 Pada function ini kami menggunakan os.system("cls") yang berfungsi untuk membersihkan tampilan layar terminal. Tujuannya agar setiap kali pengguna berpindah dari satu menu ke menu lainnya, tampilan sebelumnya tidak menumpuk sehingga program terlihat lebih rapi. Contohnya, ketika pengguna selesai melakukan login dan masuk ke menu admin, layar terminal akan dibersihkan terlebih dahulu sebelum menu admin ditampilkan.
 
+---
+
+3. Fungsi Keyboard Interrupt
 ```python
 def asalpicik(pesan):
     while True:
@@ -131,6 +137,10 @@ def asalpicik(pesan):
 ```
 
 Pada function ini kami membuat sebuah function khusus untuk menangani input dari pengguna. Di dalamnya terdapat perulangan while True serta percabangan try-except yang digunakan untuk menangani error ketika pengguna menekan tombol Ctrl+C atau terjadi EOFError. Jika salah satu kondisi tersebut terjadi, program akan menampilkan pesan "No No Yaa!" tanpa langsung menghentikan program. Contohnya, ketika program meminta pengguna memasukkan username kemudian pengguna menekan Ctrl+C, program akan menampilkan pesan tersebut dan kembali meminta input. Dengan adanya function ini, penanganan input dapat digunakan secara berulang di berbagai bagian program.
+
+---
+
+4. Menu Utama
 
 ```python
 def menu_utama():
@@ -158,6 +168,8 @@ def menu_utama():
             time.sleep(1)
 ```
 Pada function ini, program akan menampilkan halaman menu utama dengan memberikan tiga pilihan, yaitu registrasi, login, dan keluar aplikasi. Di sini kami menggunakan perulangan while True agar menu dapat terus ditampilkan sampai pengguna memilih opsi keluar. Kemudian, terdapat percabangan if, elif, dan else untuk menentukan tindakan berdasarkan pilihan pengguna. Jika pengguna memilih angka 1, program akan menjalankan function registrasi(). Jika memilih angka 2, program akan menjalankan function login(). Sementara itu, jika memilih angka 3, program akan menampilkan pesan bahwa program selesai dan menghentikan perulangan menggunakan break. Apabila pengguna memasukkan pilihan selain ketiga opsi tersebut, program akan menampilkan pesan bahwa pilihan tidak tersedia.
+
+---
 
 <img width="500" height="563" alt="image" src="https://github.com/user-attachments/assets/905ff3d4-bc26-4519-ab0d-9490c5dd4fa4" />
 <br>
