@@ -26,7 +26,8 @@ Pada proses login, sistem mencocokkan data yang dimasukkan dengan data user yang
 
 ## CRUD
 
-   <img width="2232" height="1090" alt="_FlowchartPAKel3-CRUD" src="https://github.com/user-attachments/assets/38b53588-e73f-4977-9974-8940de97173c" />
+  <img width="2232" height="1090" alt="FlowchartPAKel3-CRUD (1)" src="https://github.com/user-attachments/assets/1e24ff25-d4b8-4a3b-a3f0-cce967950475" />
+
 
 Flowchart pengelolaan barang menggambarkan proses yang dapat dilakukan admin untuk melihat, menambah, mengubah, dan menghapus data barang. Sistem membaca data dari barang.json sebelum menjalankan proses yang dipilih. Ketika admin melakukan perubahan, sistem menyimpan data terbaru ke dalam berkas tersebut.
 
