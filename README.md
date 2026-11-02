@@ -227,4 +227,5 @@ Function ini digunakan untuk menampilkan riwayat transaksi yang telah dilakukan 
 <br>
 <img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/1a5193fe-8f75-4ee6-9ad9-0b61571fd4c3" />
 <br>
-<img width="373" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/0de1e138-91fd-4a2b-86b9-0e731c1989d0" />
+<img width="562" height="119" alt="Screenshot 2026-10-30 001610" src="https://github.com/user-attachments/assets/1e042b9c-d085-4d18-94f8-3f2fb4cfdb8c" />
+
