@@ -99,7 +99,7 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 
 # Alur Program
 
-1. Library
+## 1. Library
 ```python
 import os
 import time
@@ -113,7 +113,7 @@ Di awal program ini kami menggunakan beberapa library dan modul seperti os, time
 
 ---
 
-2. Fungsi Membersihkan Terminal
+## 2. Fungsi Membersihkan Terminal
 
 ```python
 def bersih():   
@@ -124,7 +124,7 @@ Pada function ini kami menggunakan os.system("cls") yang berfungsi untuk members
 
 ---
 
-3. Fungsi Keyboard Interrupt
+## 3. Fungsi Keyboard Interrupt
 ```python
 def asalpicik(pesan):
     while True:
