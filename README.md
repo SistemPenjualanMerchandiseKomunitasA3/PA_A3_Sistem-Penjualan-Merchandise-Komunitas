@@ -51,7 +51,7 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 
 # Program
 
-## 1. Apalah
+## 1. Data Penyimpanan
 
 | No | Library | Kegunaan |
 | :--- | :---: | :---: |
