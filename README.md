@@ -277,12 +277,11 @@ Cuplikan ini menunjukan proses untuk kembali ke menu utama admin.
 ## LOGIN SEBAGAI USER
 
 <img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/9264bd49-ee1e-481b-85e1-a798826feee1" />
-
+<br>
 <img width="389" height="131" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/e1c9cb1b-bd65-4ce9-a9d6-e02939ee493a" />
-
+<br>
 <img width="407" height="131" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/60a3e244-b005-491b-8022-95e33b440566" />
-
-
+<br>
 <img width="417" height="208" alt="Screenshot 2026-10-30 001417" src="https://github.com/user-attachments/assets/d58146d6-b705-40b0-bce2-99c7ed92a7ec" />
 
 ## 1. Lihat Barang
@@ -304,7 +303,7 @@ Cuplikan ini menunjukan proses untuk kembali ke menu utama admin.
 ## 4. Riwayat transaksi
 
 <img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/8fa2f261-cd37-4dc0-85ff-a225fdf7b0a1" />
-
+<br>
 <img width="562" height="119" alt="Screenshot 2026-10-30 001610" src="https://github.com/user-attachments/assets/a026fe5e-8c2d-46e7-989b-57c07a0896d2" />
 
 ## 5. Logout
