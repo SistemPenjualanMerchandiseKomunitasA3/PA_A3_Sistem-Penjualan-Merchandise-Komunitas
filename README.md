@@ -200,7 +200,7 @@ Setelah pengguna berhasil login sebagai Admin, sistem akan menampilkan Menu Admi
 - Laporan
 - Logout
 
-## 1. Kelola Barang
+# 1. Kelola Barang
 <img width="392" height="135" alt="Screenshot 2026-10-30 001835" src="https://github.com/user-attachments/assets/94b5833c-c7d6-424c-9e11-2983427a5638" />
 
 Cuplikan ini menampilkan tahapan navigasi setelah Admin memilih opsi “Kelola Barang” dari menu utama Admin. Pada bagian ini, sistem menampilkan lima fitur utama yang berfungsi untuk mengelola data barang, yaitu:
@@ -210,7 +210,9 @@ Cuplikan ini menampilkan tahapan navigasi setelah Admin memilih opsi “Kelola B
 - Ubah Barang – Mengubah informasi barang yang sudah terdaftar.
 - Hapus Barang – Menghapus barang dari sistem.
 - Kembali – Mengembalikan pengguna ke menu Admin sebelumnya.
-  
+
+## 1. Tampilkan Barang
+
 <img width="406" height="249" alt="Screenshot 2026-10-30 001845" src="https://github.com/user-attachments/assets/1ad66c98-d93a-4932-8640-ec3e6baa1bd4" />
 
 Cuplikan ini menampilkan hasil dari pilihan menu “Tampilkan Barang” pada bagian Kelola Barang. Pada tahap ini, sistem menampilkan tabel berisi seluruh data barang yang tersimpan di database, dengan atribut sebagai berikut:
@@ -219,26 +221,60 @@ Cuplikan ini menampilkan hasil dari pilihan menu “Tampilkan Barang” pada bag
 - Nama Barang – Nama item yang dijual.
 - Harga – Harga satuan produk.
 - Stok – Jumlah produk yang tersedia.
+
 Tampilan berbasis teks ini dibuat untuk memberikan kemudahan dalam memantau data produk secara cepat dan efisien langsung melalui terminal.
 
-<br>
+## 2. Tambah Barang
+
 <img width="394" height="137" alt="Screenshot 2026-10-30 001854" src="https://github.com/user-attachments/assets/ff607e7b-4ff9-49e8-ae86-c2b062150f63" />
 <br>
 <img width="388" height="140" alt="Screenshot 2026-10-30 001939" src="https://github.com/user-attachments/assets/e2df865e-584e-4eb1-83b3-e06a35434e67" />
-<br>
+
+Cuplikan ini menunjukkan proses penambahan barang baru ke dalam sistem. Pengguna menginput data seperti nomor barang, nama barang, harga barang, stok barang, kemudian sistem menyimpan data tersebut ke dalam file JSON. Setelah proses berhasil, sistem menampilkan pesan “Barang berhasil ditambahkan.” dan memperbarui daftar barang yang tersedia di terminal.
+
+## 3. Ubah Barang
+
 <img width="356" height="320" alt="Screenshot 2026-10-30 002115" src="https://github.com/user-attachments/assets/6886b043-00ec-46bc-9204-b5512a665fd3" />
-<br>
+
+Gambar ini memperlihatkan proses pengubahan data barang. Pengguna memasukkan nomor barang yang ingin diperbarui, kemudian sistem menampilkan data barang sebelumnya. Pengguna dapat mengubah nomor barang, nama barang, harga, maupun stok. Jika ada informasi yang tidak ingin diubah, pengguna cukup mengosongkan input atau memilih untuk tidak melakukan perubahan. Setelah proses selesai, sistem menyimpan data terbaru dan menampilkan pesan “Data barang berhasil diperbarui.”
+
+## 4. Hapus Barang
+
 <img width="439" height="152" alt="Screenshot 2026-10-30 002132" src="https://github.com/user-attachments/assets/ad7c7e45-bb36-4df2-bf10-7070fe2bfdef" />
 <br>
 <img width="272" height="254" alt="Screenshot 2026-10-30 002204" src="https://github.com/user-attachments/assets/7d5b204a-f710-4f4d-9cb9-18a5280d7b2a" />
-<br>
+
+Cuplikan ini menunjukkan proses penghapusan data barang dari sistem. Pengguna memasukkan nomor barang yang ingin dihapus, kemudian sistem meminta konfirmasi sebelum benar-benar menghapus data dari file JSON. Jika pengguna memilih “ya”, maka sistem menampilkan pesan “Barang berhasil dihapus.” dan memperbarui daftar produk yang tersisa
+
+## 5. Kembali
+
 <img width="399" height="193" alt="Screenshot 2026-10-30 002216" src="https://github.com/user-attachments/assets/6b442dd0-174d-47e5-8225-3380ae6ce482" />
+
+Cuplikan ini menunjukan proses untuk kembali ke menu utama admin.
+
+# 2. Lihat Pengguna
+
+<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
+<br>
+<img width="435" height="267" alt="WhatsApp Image 2026-11-02 at 23 16 43" src="https://github.com/user-attachments/assets/8b741fac-eb19-4f79-b7ef-820afbb87b9e" />
+
+
+# 3. Lihat seluruh transaksi
+<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
+<br>
+<img width="978" height="357" alt="WhatsApp Image 2026-11-02 at 23 16 42" src="https://github.com/user-attachments/assets/c8de77af-8ed4-4b80-bfae-12a6d0371a87" />
+
+# 4. Laporan Penjualan
+<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
 <br>
 <img width="373" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/9aefbd80-42a1-4bbe-bddb-940a63955cf3" />
-<br>
+
+# 5. Logout
+
+<img width="760" height="385" alt="WhatsApp Image 2026-11-02 at 23 16 43 (1)" src="https://github.com/user-attachments/assets/ffc24b14-b8c6-4975-8367-52aee4674c3b" />
+
 
 <br>
-
 <img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/381d003d-063a-4934-8c5e-3909c6a239b5" />
 <br>
 <img width="389" height="131" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/9aa97f46-6377-43d0-9473-ae325c55b46e" />
