@@ -187,11 +187,40 @@ Function ini digunakan untuk menampilkan riwayat transaksi yang telah dilakukan 
 
 # Screenshot Output
 
+## Login Sebagai Admin
+<img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/4a473486-f982-4ffc-be8a-10fd9ad38247" />
+<br>
 <img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/6313236a-bef3-4dea-97ba-49a33c509f3f" />
-<br>
+
+Proses dimulai dari Menu utama dengan tiga opsi utama: Registrasi, Login, Keluar Aplikasi. 
+Setelah pengguna berhasil login sebagai Admin, sistem akan menampilkan Menu Admin yang berisi beberapa fitur utama, yaitu: 
+- Kelola barang
+- Lihat pengguna
+- Lihat seluruh transaksi
+- Laporan
+- Logout
+
+## 1. Kelola Barang
 <img width="392" height="135" alt="Screenshot 2026-10-30 001835" src="https://github.com/user-attachments/assets/94b5833c-c7d6-424c-9e11-2983427a5638" />
-<br>
+
+Cuplikan ini menampilkan tahapan navigasi setelah Admin memilih opsi “Kelola Barang” dari menu utama Admin. Pada bagian ini, sistem menampilkan lima fitur utama yang berfungsi untuk mengelola data barang, yaitu:
+
+- Tampilkan Barang – Menampilkan daftar barang yang tersedia dalam sistem.
+- Tambah Barang – Menambahkan data barang baru ke dalam database.
+- Ubah Barang – Mengubah informasi barang yang sudah terdaftar.
+- Hapus Barang – Menghapus barang dari sistem.
+- Kembali – Mengembalikan pengguna ke menu Admin sebelumnya.
+  
 <img width="406" height="249" alt="Screenshot 2026-10-30 001845" src="https://github.com/user-attachments/assets/1ad66c98-d93a-4932-8640-ec3e6baa1bd4" />
+
+Cuplikan ini menampilkan hasil dari pilihan menu “Tampilkan Barang” pada bagian Kelola Barang. Pada tahap ini, sistem menampilkan tabel berisi seluruh data barang yang tersimpan di database, dengan atribut sebagai berikut:
+
+- Nomor – Penomoran untuk setiap barang.
+- Nama Barang – Nama item yang dijual.
+- Harga – Harga satuan produk.
+- Stok – Jumlah produk yang tersedia.
+Tampilan berbasis teks ini dibuat untuk memberikan kemudahan dalam memantau data produk secara cepat dan efisien langsung melalui terminal.
+
 <br>
 <img width="394" height="137" alt="Screenshot 2026-10-30 001854" src="https://github.com/user-attachments/assets/ff607e7b-4ff9-49e8-ae86-c2b062150f63" />
 <br>
@@ -228,4 +257,5 @@ Function ini digunakan untuk menampilkan riwayat transaksi yang telah dilakukan 
 <img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/1a5193fe-8f75-4ee6-9ad9-0b61571fd4c3" />
 <br>
 <img width="562" height="119" alt="Screenshot 2026-10-30 001610" src="https://github.com/user-attachments/assets/1e042b9c-d085-4d18-94f8-3f2fb4cfdb8c" />
+
 
