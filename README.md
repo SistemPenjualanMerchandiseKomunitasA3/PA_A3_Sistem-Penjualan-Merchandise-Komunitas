@@ -274,24 +274,39 @@ Cuplikan ini menunjukan proses untuk kembali ke menu utama admin.
 <img width="760" height="385" alt="WhatsApp Image 2026-11-02 at 23 16 43 (1)" src="https://github.com/user-attachments/assets/ffc24b14-b8c6-4975-8367-52aee4674c3b" />
 
 
-<br>
-<img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/381d003d-063a-4934-8c5e-3909c6a239b5" />
-<br>
-<img width="389" height="131" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/9aa97f46-6377-43d0-9473-ae325c55b46e" />
-<br>
-<img width="407" height="131" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/5117fc2e-0e3a-4b16-b700-41f509fd24b7" />
-<br>
-<img width="417" height="208" alt="Screenshot 2026-10-30 001417" src="https://github.com/user-attachments/assets/794c8740-0449-4ee3-baab-08642f50a763" />
-<br>
-<img width="434" height="308" alt="Screenshot 2026-10-30 001505" src="https://github.com/user-attachments/assets/aa2a61be-c48a-4fe9-abcc-992015d0c2fc" />
-<br>
-<img width="415" height="251" alt="Screenshot 2026-10-30 001636" src="https://github.com/user-attachments/assets/1a1ca380-da2c-455f-af3f-dd87fbeaff02" />
+## LOGIN SEBAGAI USER
 
-<br>
-<img width="371" height="285" alt="Screenshot 2026-10-30 001543" src="https://github.com/user-attachments/assets/20c6a45a-b4ae-406d-ab02-9c870d67b9c2" />
-<br>
-<img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/1a5193fe-8f75-4ee6-9ad9-0b61571fd4c3" />
-<br>
-<img width="562" height="119" alt="Screenshot 2026-10-30 001610" src="https://github.com/user-attachments/assets/1e042b9c-d085-4d18-94f8-3f2fb4cfdb8c" />
+<img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/9264bd49-ee1e-481b-85e1-a798826feee1" />
+
+<img width="389" height="131" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/e1c9cb1b-bd65-4ce9-a9d6-e02939ee493a" />
+
+<img width="407" height="131" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/60a3e244-b005-491b-8022-95e33b440566" />
 
 
+<img width="417" height="208" alt="Screenshot 2026-10-30 001417" src="https://github.com/user-attachments/assets/d58146d6-b705-40b0-bce2-99c7ed92a7ec" />
+
+## 1. Lihat Barang
+
+<img width="415" height="251" alt="Screenshot 2026-10-30 001636" src="https://github.com/user-attachments/assets/74ea26a6-76ce-4c71-8241-bc7be40fcb3b" />
+
+
+
+## 2. Top up saldo
+
+<img width="434" height="308" alt="Screenshot 2026-10-30 001505" src="https://github.com/user-attachments/assets/5d031474-456c-42f8-8d38-f8cfbe35dabe" />
+
+
+## 3. Beli Barang
+
+<img width="371" height="285" alt="Screenshot 2026-10-30 001543" src="https://github.com/user-attachments/assets/ca1ddb71-96b5-4f44-b9ba-1df653141e0f" />
+
+
+## 4. Riwayat transaksi
+
+<img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/8fa2f261-cd37-4dc0-85ff-a225fdf7b0a1" />
+
+<img width="562" height="119" alt="Screenshot 2026-10-30 001610" src="https://github.com/user-attachments/assets/a026fe5e-8c2d-46e7-989b-57c07a0896d2" />
+
+## 5. Logout
+
+<img width="742" height="441" alt="WhatsApp Image 2026-11-02 at 23 41 10" src="https://github.com/user-attachments/assets/aaa62e46-0813-4f33-b925-f96c01139c4f" />
