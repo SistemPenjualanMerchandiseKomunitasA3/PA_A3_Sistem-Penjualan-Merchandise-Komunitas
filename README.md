@@ -16,7 +16,7 @@ Proses pembelian dilakukan menggunakan saldo pengguna. Program akan memeriksa ke
 
 # Flowchart
 
-## Registrasi dan Login**
+## Registrasi dan Login
    
    <img width="1732" height="1484" alt="FlowchartPAKel3-REGIS DAN LOGIN (1)" src="https://github.com/user-attachments/assets/cf1ab9a8-b744-4972-ab1e-928772321608" />
 
@@ -24,7 +24,7 @@ Flowchart registrasi dan login menjelaskan proses awal penggunaan program. Siste
 
 Pada proses login, sistem mencocokkan data yang dimasukkan dengan data user yang tersimpan. Jika data sesuai, user diarahkan ke halaman berdasarkan perannya. Jika data tidak sesuai, sistem menampilkan pesan kesalahan dan memberikan kesempatan untuk mencoba kembali hingga batas percobaan yang ditentukan.
 
-##CRUD
+## CRUD
 
    <img width="2232" height="1090" alt="_FlowchartPAKel3-CRUD" src="https://github.com/user-attachments/assets/38b53588-e73f-4977-9974-8940de97173c" />
 
