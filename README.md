@@ -186,3 +186,45 @@ Function ini digunakan untuk menampilkan riwayat transaksi yang telah dilakukan 
 
 
 # Screenshot Output
+
+<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/6313236a-bef3-4dea-97ba-49a33c509f3f" />
+<br>
+<img width="392" height="135" alt="Screenshot 2026-10-30 001835" src="https://github.com/user-attachments/assets/94b5833c-c7d6-424c-9e11-2983427a5638" />
+<br>
+<img width="406" height="249" alt="Screenshot 2026-10-30 001845" src="https://github.com/user-attachments/assets/1ad66c98-d93a-4932-8640-ec3e6baa1bd4" />
+<br>
+<img width="394" height="137" alt="Screenshot 2026-10-30 001854" src="https://github.com/user-attachments/assets/ff607e7b-4ff9-49e8-ae86-c2b062150f63" />
+<br>
+<img width="388" height="140" alt="Screenshot 2026-10-30 001939" src="https://github.com/user-attachments/assets/e2df865e-584e-4eb1-83b3-e06a35434e67" />
+<br>
+<img width="356" height="320" alt="Screenshot 2026-10-30 002115" src="https://github.com/user-attachments/assets/6886b043-00ec-46bc-9204-b5512a665fd3" />
+<br>
+<img width="439" height="152" alt="Screenshot 2026-10-30 002132" src="https://github.com/user-attachments/assets/ad7c7e45-bb36-4df2-bf10-7070fe2bfdef" />
+<br>
+<img width="272" height="254" alt="Screenshot 2026-10-30 002204" src="https://github.com/user-attachments/assets/7d5b204a-f710-4f4d-9cb9-18a5280d7b2a" />
+<br>
+<img width="399" height="193" alt="Screenshot 2026-10-30 002216" src="https://github.com/user-attachments/assets/6b442dd0-174d-47e5-8225-3380ae6ce482" />
+<br>
+<img width="373" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/9aefbd80-42a1-4bbe-bddb-940a63955cf3" />
+<br>
+
+<br>
+
+<img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/381d003d-063a-4934-8c5e-3909c6a239b5" />
+<br>
+<img width="389" height="131" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/9aa97f46-6377-43d0-9473-ae325c55b46e" />
+<br>
+<img width="407" height="131" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/5117fc2e-0e3a-4b16-b700-41f509fd24b7" />
+<br>
+<img width="417" height="208" alt="Screenshot 2026-10-30 001417" src="https://github.com/user-attachments/assets/794c8740-0449-4ee3-baab-08642f50a763" />
+<br>
+<img width="434" height="308" alt="Screenshot 2026-10-30 001505" src="https://github.com/user-attachments/assets/aa2a61be-c48a-4fe9-abcc-992015d0c2fc" />
+<br>
+<img width="415" height="251" alt="Screenshot 2026-10-30 001636" src="https://github.com/user-attachments/assets/1a1ca380-da2c-455f-af3f-dd87fbeaff02" />
+
+<br>
+<img width="371" height="285" alt="Screenshot 2026-10-30 001543" src="https://github.com/user-attachments/assets/20c6a45a-b4ae-406d-ab02-9c870d67b9c2" />
+<br>
+<img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/1a5193fe-8f75-4ee6-9ad9-0b61571fd4c3" />
+<br>
+<img width="373" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/0de1e138-91fd-4a2b-86b9-0e731c1989d0" />
