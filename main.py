@@ -722,3 +722,224 @@ def riwayat_transaksi(username=None):
         print(tabel)
     else:
         print("Belum ada transaksi.")
+
+# Laporan Admin (Admin)
+def laporan_admin():
+    bersih()
+    try:
+        with open("transaksi.json", "r") as file:
+            transaksi = json.load(file)
+    except FileNotFoundError:
+        transaksi = []
+    except json.JSONDecodeError:
+        print("File transaksi.json tidak valid.")
+        return
+
+    pendapatan = 0
+    jumlah_transaksi = 0
+    penjualan_barang = {}
+
+    for data in transaksi:
+        if data["jenis"] == "PEMBELIAN":
+            pendapatan += data["total"]
+            jumlah_transaksi += 1
+
+            bagian = data["detail"].rsplit(" x ", 1)
+            nama = bagian[0]
+            jumlah = int(bagian[1])
+
+            if nama in penjualan_barang:
+                penjualan_barang[nama] += jumlah
+            else:
+                penjualan_barang[nama] = jumlah
+
+    print("================================================================")
+    print("|                     Laporan Penjualan                        |")
+    print("================================================================")
+    print("Total pendapatan: Rp", format(pendapatan, ","))
+    print("Jumlah transaksi pembelian:", jumlah_transaksi)
+
+    if penjualan_barang:
+        terlaris = max(
+            penjualan_barang,
+            key=penjualan_barang.get
+        )
+
+        print("Produk terlaris:", terlaris)
+        print("Jumlah terjual:", penjualan_barang[terlaris])
+    else:
+        print("Belum ada penjualan.")
+
+# Tampilkan User (Admin)
+def tampilkan_users():
+    bersih()
+    try:
+        with open("user.json", "r") as file:
+            users = json.load(file)
+    except FileNotFoundError:
+        users = []
+    except json.JSONDecodeError:
+        print("File user.json tidak valid.")
+        return
+    tabel = PrettyTable()
+    tabel.field_names = ["Username", "Role", "Saldo"]
+    for akun in users:
+        if akun["role"].lower() == "user":
+            tabel.add_row([
+                akun["username"],
+                akun["role"],
+                "Rp " + format(akun["saldo"], ",")
+        ])
+    print(tabel)
+
+# Menu Admin
+def menu_admin():
+    while True:
+        bersih()
+        print("================================================================")
+        print("|                           Menu Admin                         |")
+        print("================================================================")
+        print("| 1. Kelola barang                                             |")
+        print("| 2. Lihat pengguna                                            |")
+        print("| 3. Lihat seluruh transaksi                                   |")
+        print("| 4. Laporan penjualan                                         |")
+        print("| 5. Logout                                                    |")
+        print("================================================================")
+        pilihan = asalpicik("Pilih menu: ")
+        if pilihan == "1":
+            menu_crud_barang()
+        elif pilihan == "2":
+            tampilkan_users()
+        elif pilihan == "3":
+            riwayat_transaksi()
+        elif pilihan == "4":
+            laporan_admin()
+        elif pilihan == "5":
+            print("Logout berhasil.")
+            break
+        else:
+            print("Pilihan tidak tersedia.")
+        if pilihan != "5":
+            asalpicik("\nTekan Enter untuk melanjutkan...")
+
+# Menu User
+def menu_user(username):
+    while True:
+        bersih()
+
+        try:
+            with open("user.json", "r") as file:
+                users = json.load(file)
+        except (FileNotFoundError, json.JSONDecodeError):
+            print("Data pengguna tidak tersedia atau tidak valid.")
+            return
+
+        saldo = 0
+
+        for akun in users:
+            if akun["username"].lower() == username.lower():
+                saldo = akun["saldo"]
+                break
+    
+        print("================================================================")
+        print("|                           Menu User                          |")
+        print("================================================================")
+        print(" Halo,", username,)
+        print(" Saldo: Rp", format(saldo, ","))
+        print("================================================================")
+        print("| 1. Lihat barang                                              |")
+        print("| 2. Top up saldo                                              |")
+        print("| 3. Beli barang                                               |")
+        print("| 4. Riwayat transaksi                                         |")
+        print("| 5. Logout                                                    |")
+        print("================================================================")
+        pilihan = asalpicik("Pilih menu: ")
+        if pilihan == "1":
+            tampilkan_barang()
+        elif pilihan == "2":
+            top_up(username)
+        elif pilihan == "3":
+            beli_barang(username)
+        elif pilihan == "4":
+            riwayat_transaksi(username)
+        elif pilihan == "5":
+            print("Logout berhasil.")
+            break
+        else:
+            print("Pilihan tidak tersedia.")
+        if pilihan != "5":
+            asalpicik("\nTekan Enter untuk melanjutkan...")
+
+# Inisialisasi Data Awal
+def inisialisasi_data():
+    data_user = [
+        {
+            "username": "admin",
+            "password": "admin123",
+            "role": "admin",
+            "saldo": 0
+        }
+    ]
+
+    data_barang = [
+        {
+            "no": "1",
+            "nama": "PDH KBM FT",
+            "harga": 165000,
+            "stok": 20
+        },
+        {
+            "no": "2",
+            "nama": "Kaos FT",
+            "harga": 100000,
+            "stok": 50
+        },
+        {
+            "no": "3",
+            "nama": "Gantungan Kunci FT",
+            "harga": 20000,
+            "stok": 50
+        },
+        {
+            "no": "4",
+            "nama": "Slayer FT",
+            "harga": 35000,
+            "stok": 25
+        },
+        {
+            "no": "5",
+            "nama": "Sticker FT",
+            "harga": 5000,
+            "stok": 30
+        },
+        {
+            "no": "6",
+            "nama": "Kaos Kaki FT",
+            "harga": 15000,
+            "stok": 50
+        }
+    ]
+
+    if not os.path.exists("user.json"):
+        with open("user.json", "w") as file:
+            json.dump(data_user, file, indent=4)
+
+    if not os.path.exists("barang.json"):
+        with open("barang.json", "w") as file:
+            json.dump(data_barang, file, indent=4)
+
+    if not os.path.exists("transaksi.json"):
+        with open("transaksi.json", "w") as file:
+            json.dump([], file, indent=4)
+
+# Main Program  
+if __name__ == "__main__":
+    inisialisasi_data()
+    while True:
+        try:
+            menu_utama()
+            break
+        except KeyboardInterrupt:
+            print("\nNo No Yaa!")
+        except EOFError:
+            print("\nNo No Yaa!")
