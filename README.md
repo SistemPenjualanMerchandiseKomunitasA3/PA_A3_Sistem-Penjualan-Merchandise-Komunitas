@@ -101,7 +101,8 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 # Alur Program
 
 ## 1. Library
-<img width="613" height="89" alt="image" src="https://github.com/user-attachments/assets/78fe4e04-be6e-4932-9243-1adae0a8bb33" />
+
+<img width="613" height="89" alt="image" src="https://github.com/user-attachments/assets/78fe4e04-be6e-4932-9243-1adae0a8bb33" /><br>
 
 
 Di awal program ini kami menggunakan beberapa library dan modul seperti os, time, json, PrettyTable, pwinput, dan random. Os sendiri berfungsi untuk membersihkan tampilan layar terminal agar lebih bersih dan rapi. Time digunakan untuk memberikan jeda waktu pada program serta mendapatkan informasi tanggal transaksi. Json digunakan untuk membaca dan menyimpan data dalam format JSON. PrettyTable digunakan untuk menampilkan data dalam bentuk tabel agar lebih terstruktur. Pwinput digunakan untuk menyembunyikan karakter password ketika pengguna melakukan input. Terakhir, Random digunakan untuk menghasilkan angka secara acak yang nantinya digunakan sebagai bagian dari kode transaksi.
@@ -110,14 +111,14 @@ Di awal program ini kami menggunakan beberapa library dan modul seperti os, time
 
 ## 2. Fungsi Membersihkan Terminal
 
-<img width="613" height="41" alt="image" src="https://github.com/user-attachments/assets/fea68457-409c-4b75-8d82-4b7bc2dd1fab" />
+<img width="613" height="41" alt="image" src="https://github.com/user-attachments/assets/fea68457-409c-4b75-8d82-4b7bc2dd1fab" /><br>
 
 Pada function ini kami menggunakan os.system("cls") yang berfungsi untuk membersihkan tampilan layar terminal. Tujuannya agar setiap kali pengguna berpindah dari satu menu ke menu lainnya, tampilan sebelumnya tidak menumpuk sehingga program terlihat lebih rapi. Contohnya, ketika pengguna selesai melakukan login dan masuk ke menu admin, layar terminal akan dibersihkan terlebih dahulu sebelum menu admin ditampilkan.
 
 ---
 
 ## 3. Fungsi Keyboard Interrupt
-<img width="613" height="114" alt="image" src="https://github.com/user-attachments/assets/7a04f79e-a0c7-497a-b6ad-ebc468767acd" />
+<img width="613" height="114" alt="image" src="https://github.com/user-attachments/assets/7a04f79e-a0c7-497a-b6ad-ebc468767acd" /><br>
 
 Pada function ini kami membuat sebuah function khusus untuk menangani input dari pengguna. Di dalamnya terdapat perulangan while True serta percabangan try-except yang digunakan untuk menangani error ketika pengguna menekan tombol Ctrl+C atau terjadi EOFError. Jika salah satu kondisi tersebut terjadi, program akan menampilkan pesan "No No Yaa!" tanpa langsung menghentikan program. Contohnya, ketika program meminta pengguna memasukkan username kemudian pengguna menekan Ctrl+C, program akan menampilkan pesan tersebut dan kembali meminta input. Dengan adanya function ini, penanganan input dapat digunakan secara berulang di berbagai bagian program.
 
@@ -125,31 +126,31 @@ Pada function ini kami membuat sebuah function khusus untuk menangani input dari
 
 ## 4. Menu Utama
 
-<img width="613" height="329" alt="image" src="https://github.com/user-attachments/assets/e11732b5-fae1-4569-a2ca-ec522ed2b41a" />
+<img width="613" height="329" alt="image" src="https://github.com/user-attachments/assets/e11732b5-fae1-4569-a2ca-ec522ed2b41a" /><br>
 
 Pada function ini, program akan menampilkan halaman menu utama dengan memberikan tiga pilihan, yaitu registrasi, login, dan keluar aplikasi. Di sini kami menggunakan perulangan while True agar menu dapat terus ditampilkan sampai pengguna memilih opsi keluar. Kemudian, terdapat percabangan if, elif, dan else untuk menentukan tindakan berdasarkan pilihan pengguna. Jika pengguna memilih angka 1, program akan menjalankan function registrasi(). Jika memilih angka 2, program akan menjalankan function login(). Sementara itu, jika memilih angka 3, program akan menampilkan pesan bahwa program selesai dan menghentikan perulangan menggunakan break. Apabila pengguna memasukkan pilihan selain ketiga opsi tersebut, program akan menampilkan pesan bahwa pilihan tidak tersedia.
 
 
 # 5. Menu Registrasi
 <img width="613" height="653" alt="Screenshot 2026-11-03 221538" src="https://github.com/user-attachments/assets/5cdbeea2-a93d-4865-8c21-98210dcd051a" />
-<img width="613" height="126" alt="Screenshot 2026-11-03 221613" src="https://github.com/user-attachments/assets/fa4a1e39-2424-469e-b7fa-68c92f9a180a" />
+<img width="613" height="126" alt="Screenshot 2026-11-03 221613" src="https://github.com/user-attachments/assets/fa4a1e39-2424-469e-b7fa-68c92f9a180a" /><br>
 
 
 Function ini digunakan untuk melakukan pendaftaran akun baru. Pada awal function, program akan membersihkan layar dan menampilkan halaman registrasi. Selanjutnya, program akan membaca data pengguna dari file user.json menggunakan json.load(). Setelah itu, program akan meminta pengguna memasukkan username dan password dengan beberapa validasi. Pada bagian username, program memastikan bahwa username tidak boleh kosong, memiliki minimal lima karakter, dan belum digunakan oleh akun lain. Pengecekan username dilakukan menggunakan perulangan for dengan membandingkan username yang dimasukkan dengan data pengguna yang sudah tersimpan. Kemudian, pada bagian password, program memastikan bahwa password tidak boleh kosong dan memiliki minimal lima karakter. Jika seluruh persyaratan sudah terpenuhi, program akan membuat data akun baru yang berisi username, password, role sebagai user, dan saldo awal sebesar nol. Terakhir, data akun akan dimasukkan ke dalam daftar pengguna menggunakan append() dan disimpan kembali ke file user.json menggunakan json.dump().
 
 # 6. Menu Login
-<img width="613" height="554" alt="image" src="https://github.com/user-attachments/assets/02d601e7-ee6b-40b7-87ac-e3b0a5299993" />
+<img width="613" height="554" alt="image" src="https://github.com/user-attachments/assets/02d601e7-ee6b-40b7-87ac-e3b0a5299993" /><br>
 
 Function ini digunakan untuk melakukan proses autentikasi atau pemeriksaan akun pengguna sebelum masuk ke dalam sistem. Pertama, program akan membaca data akun dari file user.json. Di sini juga terdapat penanganan error menggunakan try-except, yaitu FileNotFoundError jika file tidak ditemukan dan json.JSONDecodeError jika isi file JSON tidak valid. Selanjutnya, program memberikan kesempatan login sebanyak tiga kali menggunakan variabel kesempatan = 3. Pengguna diminta memasukkan username dan password, kemudian program akan mencocokkan data tersebut dengan akun yang tersimpan di dalam file JSON. Jika username dan password sesuai, program akan menampilkan pesan login berhasil. Setelah itu, program akan memeriksa nilai role akun tersebut. Jika role adalah admin, pengguna akan diarahkan ke function menu_admin(), sedangkan jika role adalah user, pengguna akan diarahkan ke function menu_user(). Sebaliknya, jika username atau password salah, kesempatan login akan dikurangi satu. Apabila kesempatan sudah habis, program akan menampilkan pesan bahwa batas percobaan login telah tercapai. Contohnya, ketika admin memasukkan username dan password yang benar, program akan langsung mengarahkannya ke menu admin, sedangkan pengguna biasa akan diarahkan ke menu user.
 
 # 7. Tampilkan Barang
-<img width="613" height="415" alt="image" src="https://github.com/user-attachments/assets/cc0579f8-5ada-4e61-a7e2-6838c971e2f0" />
+<img width="613" height="415" alt="image" src="https://github.com/user-attachments/assets/cc0579f8-5ada-4e61-a7e2-6838c971e2f0" /><br>
 
 Function ini digunakan untuk menampilkan seluruh daftar barang yang tersedia di dalam sistem. Pertama, program akan membaca data barang dari file barang.json. Jika file tidak ditemukan, program akan menggunakan daftar kosong. Namun, jika file tidak valid, program akan menampilkan pesan error. Selanjutnya, program akan memeriksa apakah terdapat barang di dalam file tersebut. Jika terdapat barang, program akan menggunakan PrettyTable untuk membuat tabel dengan empat kolom, yaitu nomor barang, nama barang, harga, dan stok. Kemudian, program menggunakan perulangan for untuk memasukkan setiap data barang ke dalam tabel.
 
 # 8. Tambah Barang
 <img width="613" height="625" alt="Screenshot 2026-11-03 221944" src="https://github.com/user-attachments/assets/8dca76c2-f91e-4369-a97b-894e7c3053de" />
-<img width="613" height="341" alt="Screenshot 2026-11-03 222003" src="https://github.com/user-attachments/assets/a7cfab2e-3c4d-490e-9c8d-e11d6d3473f3" />
+<img width="613" height="341" alt="Screenshot 2026-11-03 222003" src="https://github.com/user-attachments/assets/a7cfab2e-3c4d-490e-9c8d-e11d6d3473f3" /><br>
 
 
 Function ini digunakan oleh admin untuk menambahkan barang baru ke dalam sistem. Pertama, program akan membaca data barang dari file barang.json. Setelah itu, admin diminta memasukkan nomor barang dan nama barang. Program akan melakukan validasi untuk memastikan nomor barang dan nama barang tidak kosong serta nomor barang belum pernah digunakan. Selanjutnya, admin diminta memasukkan harga dan stok barang. Pada bagian ini digunakan try-except untuk memastikan harga dan stok yang dimasukkan berupa angka bulat. Harga harus lebih dari nol, sedangkan stok tidak boleh bernilai negatif. Jika seluruh data sudah sesuai, program akan menambahkan barang baru menggunakan append() dan menyimpan perubahan tersebut ke dalam file barang.json. Contohnya, admin ingin menambahkan barang baru dengan nomor KBMFT6, nama Topi FT, harga Rp75.000, dan stok 20. Setelah semua data valid, barang tersebut akan tersimpan dan masuk ke dalam daftar barang.
@@ -157,7 +158,7 @@ Function ini digunakan oleh admin untuk menambahkan barang baru ke dalam sistem.
 # 9. Ubah Barang
 
 <img width="613" height="670" alt="image" src="https://github.com/user-attachments/assets/f5d1f570-747e-4821-814c-2371b85790dd" />
-<img width="613" height="653" alt="image" src="https://github.com/user-attachments/assets/773af347-2c53-438b-bcad-401177ad1526" />
+<img width="613" height="653" alt="image" src="https://github.com/user-attachments/assets/773af347-2c53-438b-bcad-401177ad1526" /><br>
 
 
 Function ini digunakan oleh admin untuk mengubah informasi barang yang sudah tersimpan di dalam sistem. Pertama, program akan membaca data dari file barang.json, kemudian menampilkan seluruh daftar barang menggunakan PrettyTable. Setelah itu, admin diminta memasukkan nomor barang yang ingin diubah. Program akan mencari barang tersebut menggunakan perulangan for. Jika barang tidak ditemukan, program akan menampilkan pesan bahwa barang tidak tersedia. Namun, jika barang ditemukan, admin diberikan pilihan untuk mengubah nama, harga, dan stok barang. Pada bagian nama, admin cukup memasukkan nama baru. Jika input dikosongkan, nama barang akan tetap menggunakan data sebelumnya. Kemudian, untuk harga dan stok, program memberikan pilihan menggunakan input y atau n. Jika admin memilih y, program akan meminta data baru dan melakukan validasi angka. Terakhir, seluruh perubahan akan disimpan kembali ke file barang.json. Contohnya, admin ingin mengubah harga Kaos FT dari Rp100.000 menjadi Rp120.000. Admin cukup memilih barang tersebut, kemudian memilih y pada bagian ubah harga dan memasukkan harga baru.
