@@ -5,9 +5,11 @@ from prettytable import PrettyTable
 from pwinput import pwinput
 import random
 
+# Untuk Bersihkan Terminal
 def bersih():   
     os.system("cls")
 
+# Untuk Input Biar Tidak Error Saat Ctrl + C
 def asalpicik(pesan):
     while True:
         try:
@@ -16,7 +18,8 @@ def asalpicik(pesan):
             print("\nNo No Yaa!\n")
         except EOFError:
             print("\nNo No Yaa!")
-        
+
+# Menu Utama 
 def menu_utama():
     while True:
         bersih()
@@ -41,6 +44,7 @@ def menu_utama():
             print("Pilihan tidak tersedia")
             time.sleep(1)
 
+# Registrasi
 def registrasi():
     bersih()
     print("================================================================")   
@@ -76,6 +80,7 @@ def registrasi():
                 raise ValueError("Password tidak boleh kosong....")
 
             if len(password) < 5:
+
                 raise ValueError("Password minimal 5 karakter....")
             break
         except ValueError as e:
@@ -96,6 +101,7 @@ def registrasi():
     print("\nRegistrasi berhasil!")
     time.sleep(1)
 
+# Login
 def login():
     try:
         with open("user.json", "r") as file:
@@ -132,11 +138,11 @@ def login():
         if kesempatan > 0:
             print("Sisa percobaan:", kesempatan)
             time.sleep(1)
-      
         else:
             print("Batas percobaan login tercapai.")
             time.sleep(2)
 
+# Menampilkan Barang
 def tampilkan_barang():
     bersih()
     try:
@@ -167,6 +173,7 @@ def tampilkan_barang():
 
     print(tabel)
 
+# Menambah Barang (Admin)
 def tambah_barang():
     bersih()
 
@@ -236,7 +243,7 @@ def tambah_barang():
 
     print("Barang berhasil ditambahkan.")
 
-
+# Mengubah Barang (Admin)
 def ubah_barang():
     bersih()
 
@@ -331,7 +338,7 @@ def ubah_barang():
 
     print("Data barang berhasil diperbarui.")
 
-
+# Menghapus Barang (Admin)
 def hapus_barang():
     bersih()
 
@@ -395,8 +402,7 @@ def hapus_barang():
 
     print("Barang berhasil dihapus.")
 
-
-
+# Menu Kelola Barang (Admin)
 def menu_crud_barang():
     while True:
         bersih()
