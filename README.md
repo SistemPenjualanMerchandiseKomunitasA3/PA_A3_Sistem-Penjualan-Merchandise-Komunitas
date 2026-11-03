@@ -78,6 +78,7 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 | No | Fungsi | Kegunaan |
 | :--- | :---: | :---: |
 | 1 | bersih() | Membersihkan tampilan terminal sebelum menu atau informasi baru ditampilkan |
+| 2 | asalpicik() | Menangani kesalahan input ketika pengguna menekan tombol Ctrl+C atau terjadi EOFError. Fungsi ini menampilkan pesan "No No Yaa!" dan mengulangi proses input tanpa menghentikan program
 | 2 | menu_utama() | Menampilkan menu utama yang berisi pilihan registrasi, login, dan keluar dari aplikasi |
 | 3 | registrasi() | Memproses pembuatan akun baru dan menyimpan data user ke file user.json |
 | 4 | login() | Memeriksa username dan password serta mengarahkan user ke menu sesuai dengan perannya |
