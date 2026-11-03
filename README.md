@@ -230,10 +230,10 @@ Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, p
 
 # 14. Beli Barang
 
-<img width="610" height="611" alt="Screenshot 2026-11-03 214849" src="https://github.com/user-attachments/assets/8e91c8bf-d23e-431a-8d77-4f26e91c135b" />
-<img width="608" height="599" alt="Screenshot 2026-11-03 214911" src="https://github.com/user-attachments/assets/4369c5ff-9be6-4300-9d53-e5821304f128" />
-<img width="611" height="541" alt="Screenshot 2026-11-03 214941" src="https://github.com/user-attachments/assets/8645eed0-1052-44d5-8a8e-c496dbe6d495" />
-<img width="609" height="258" alt="Screenshot 2026-11-03 215000" src="https://github.com/user-attachments/assets/258e9f35-c795-4e37-b108-cb226bc5e6ff" />
+<img width="613" height="611" alt="Screenshot 2026-11-03 214849" src="https://github.com/user-attachments/assets/8e91c8bf-d23e-431a-8d77-4f26e91c135b" />
+<img width="613" height="599" alt="Screenshot 2026-11-03 214911" src="https://github.com/user-attachments/assets/4369c5ff-9be6-4300-9d53-e5821304f128" />
+<img width="613" height="525" alt="WhatsApp Image 2026-11-03 at 21 54 54" src="https://github.com/user-attachments/assets/93fd610a-6706-4df6-b6bc-e9182ef4a17f" />
+<img width="613" height="258" alt="Screenshot 2026-11-03 215000" src="https://github.com/user-attachments/assets/258e9f35-c795-4e37-b108-cb226bc5e6ff" />
 
 
 Function ini digunakan oleh pengguna untuk melakukan pembelian barang yang tersedia di dalam sistem. Pertama, program akan membaca data pengguna, barang, dan transaksi dari masing-masing file JSON. Kemudian, program akan mencari akun pengguna berdasarkan username yang sedang login dan menampilkan daftar barang menggunakan PrettyTable. Setelah itu, pengguna diminta memasukkan nomor barang yang ingin dibeli. Program akan memeriksa apakah barang ditemukan, apakah stok masih tersedia, dan apakah jumlah pembelian tidak melebihi stok yang tersedia. Selanjutnya, program menghitung total pembayaran dengan mengalikan harga barang dan jumlah pembelian. Sebelum pembayaran dilakukan, program akan memeriksa apakah saldo pengguna mencukupi. Jika saldo mencukupi, pengguna akan diminta memberikan konfirmasi pembayaran. Apabila pengguna menyetujui, saldo akan dikurangi sesuai total pembelian dan stok barang juga akan berkurang sesuai jumlah yang dibeli. Terakhir, perubahan data pengguna dan barang akan disimpan ke dalam file JSON. Program juga akan membuat data transaksi baru dan menampilkan invoice sebagai bukti pembelian. Contohnya, pengguna membeli dua Kaos FT dengan harga masing-masing Rp100.000. Maka total pembayaran adalah Rp200.000. Jika saldo mencukupi dan pengguna menyetujui pembayaran, saldo akan berkurang Rp200.000 dan stok barang berkurang sebanyak dua buah.
