@@ -311,47 +311,67 @@ Cuplikan ini menunjukan proses untuk kembali ke menu utama admin.
 <br>
 <img width="435" height="267" alt="WhatsApp Image 2026-11-02 at 23 16 43" src="https://github.com/user-attachments/assets/8b741fac-eb19-4f79-b7ef-820afbb87b9e" />
 
+Setelah admin memilih opsi 2 "Lihat Pengguna" pada Menu Admin, program menampilkan tabel daftar seluruh pengguna yang terdaftar. Tabel berisi kolom Username, Role, dan Saldo. Setelah itu program menampilkan pesan “Tekan Enter untuk melanjutkan” untuk kembali ke menu admin.
 
 # 3. Lihat seluruh transaksi
 <img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
 <br>
 <img width="978" height="357" alt="WhatsApp Image 2026-11-02 at 23 16 42" src="https://github.com/user-attachments/assets/c8de77af-8ed4-4b80-bfae-12a6d0371a87" />
 
+Setelah admin memilih opsi 3 "Lihat seluruh transaksi", program menampilkan tabel seluruh transaksi dari semua pengguna. Kolom yang ditampilkan adalah Kode, Username, Jenis (TOP UP atau PEMBELIAN), Detail, Total, dan Waktu. Setelah itu program menunggu admin menekan Enter untuk melanjutkan.
+
 # 4. Laporan Penjualan
 <img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
 <br>
 <img width="373" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/9aefbd80-42a1-4bbe-bddb-940a63955cf3" />
 
+Setelah admin memilih opsi 4 "Laporan Penjualan", program akan menampilkan laporan penjualan, Laporan ini dihitung dari seluruh transaksi berjenis pembelian. Setelah itu program menunggu admin menekan Enter untuk melanjutkan.
+
 # 5. Logout
 
 <img width="760" height="385" alt="WhatsApp Image 2026-11-02 at 23 16 43 (1)" src="https://github.com/user-attachments/assets/ffc24b14-b8c6-4975-8367-52aee4674c3b" />
 
+Setelah admin memilih opsi ke 5 "Logout", program menampilkan pesan “Logout berhasil.” dan admin keluar dari akun. Program lalu meminta menekan Enter untuk kembali ke menu utama.
 
 ## LOGIN SEBAGAI USER
 
 <img width="417" height="208" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/9264bd49-ee1e-481b-85e1-a798826feee1" />
 <br>
 <img width="417" height="208" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/e1c9cb1b-bd65-4ce9-a9d6-e02939ee493a" />
+
+Pada Menu Utama, pengguna memilih opsi yang pertama "Registrasi". Program meminta pengisian username dan password ditampilkan sebagai tanda bintang demi keamanan. Jika data valid, program menampilkan pesan “Registrasi berhasil!” lalu menunggu Enter untuk melanjutkan.
+
 <br>
 <img width="417" height="208" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/60a3e244-b005-491b-8022-95e33b440566" />
 <br>
 <img width="417" height="208" alt="Screenshot 2026-10-30 001417" src="https://github.com/user-attachments/assets/d58146d6-b705-40b0-bce2-99c7ed92a7ec" />
 
+Setelah registrasi, pengguna memilih opsi kedua. Login pada Menu Utama, Jika login berhasil, program menampilkan Menu User dengan sapaan “Halo...” serta informasi saldo (awalnya Rp 0). 
+
+Menu yang tersedia: 
+- Lihat barang
+- Top up saldo
+- Beli barang
+- Riwayat transaksi
+- Logout.
+
 ## 1. Lihat Barang
 
 <img width="415" height="251" alt="Screenshot 2026-10-30 001636" src="https://github.com/user-attachments/assets/74ea26a6-76ce-4c71-8241-bc7be40fcb3b" />
 
-
+Program menampilkan daftar barang dalam bentuk tabel dengan kolom nomor barang, nama barang, harga, dan stok. Adapun contoh barang yang di masukkan adalah PDH KBM FT, Kaos FT, Gantungan kunci FT, Slayer FT, Sticker FT, Kaos Kaki FT, dan beberapa barang lain nya. Setelah itu program menunggu Enter untuk melanjutkan.
 
 ## 2. Top up saldo
 
 <img width="434" height="308" alt="Screenshot 2026-10-30 001505" src="https://github.com/user-attachments/assets/5d031474-456c-42f8-8d38-f8cfbe35dabe" />
 
+Pengguna atau user memasukkan nominal Top Up yang di ingin kan, lalu program meminta konfirmasi "ya/tidak". Setelah menjawab y, program menampilkan "Top up berhasil" beserta invoice yang berisi kode transaksi, waktu, username, jenis (TOP UP), detail, total, dan sisa saldo.
 
 ## 3. Beli Barang
 
 <img width="371" height="285" alt="Screenshot 2026-10-30 001543" src="https://github.com/user-attachments/assets/ca1ddb71-96b5-4f44-b9ba-1df653141e0f" />
 
+Program menampilkan daftar barang, lalu pengguna memasukkan nomor barang dan jumlah pembelian. Lalu program menampilkan 
 
 ## 4. Riwayat transaksi
 
