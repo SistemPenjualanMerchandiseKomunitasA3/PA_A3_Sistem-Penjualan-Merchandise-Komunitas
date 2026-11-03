@@ -273,9 +273,8 @@ Pada bagian terakhir program, terdapat perulangan while True yang digunakan untu
 # Screenshot Output
 
 ## Login Sebagai Admin
-<img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/4a473486-f982-4ffc-be8a-10fd9ad38247" />
-<br>
-<img width="392" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/6313236a-bef3-4dea-97ba-49a33c509f3f" />
+<img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/4a473486-f982-4ffc-be8a-10fd9ad38247" /><br>
+<img width="392" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/6313236a-bef3-4dea-97ba-49a33c509f3f" /><br>
 
 Proses dimulai dari Menu utama dengan tiga opsi utama: Registrasi, Login, Keluar Aplikasi. 
 Setelah pengguna berhasil login sebagai Admin, sistem akan menampilkan Menu Admin yang berisi beberapa fitur utama, yaitu: 
@@ -286,7 +285,7 @@ Setelah pengguna berhasil login sebagai Admin, sistem akan menampilkan Menu Admi
 - Logout
 
 # 1. Kelola Barang
-<img width="392" height="135" alt="Screenshot 2026-10-30 001835" src="https://github.com/user-attachments/assets/94b5833c-c7d6-424c-9e11-2983427a5638" />
+<img width="392" height="135" alt="Screenshot 2026-10-30 001835" src="https://github.com/user-attachments/assets/94b5833c-c7d6-424c-9e11-2983427a5638" /><br>
 
 Cuplikan ini menampilkan tahapan navigasi setelah Admin memilih opsi “Kelola Barang” dari menu utama Admin. Pada bagian ini, sistem menampilkan lima fitur utama yang berfungsi untuk mengelola data barang, yaitu:
 
@@ -298,7 +297,7 @@ Cuplikan ini menampilkan tahapan navigasi setelah Admin memilih opsi “Kelola B
 
 ## 1. Tampilkan Barang
 
-<img width="392" height="249" alt="Screenshot 2026-10-30 001845" src="https://github.com/user-attachments/assets/1ad66c98-d93a-4932-8640-ec3e6baa1bd4" />
+<img width="392" height="249" alt="Screenshot 2026-10-30 001845" src="https://github.com/user-attachments/assets/1ad66c98-d93a-4932-8640-ec3e6baa1bd4" /><br>
 
 Cuplikan ini menampilkan hasil dari pilihan menu “Tampilkan Barang” pada bagian Kelola Barang. Pada tahap ini, sistem menampilkan tabel berisi seluruh data barang yang tersimpan di database, dengan atribut sebagai berikut:
 
@@ -311,72 +310,65 @@ Tampilan berbasis teks ini dibuat untuk memberikan kemudahan dalam memantau data
 
 ## 2. Tambah Barang
 
-<img width="392" height="137" alt="Screenshot 2026-10-30 001854" src="https://github.com/user-attachments/assets/ff607e7b-4ff9-49e8-ae86-c2b062150f63" />
-<br>
-<img width="392" height="140" alt="Screenshot 2026-10-30 001939" src="https://github.com/user-attachments/assets/e2df865e-584e-4eb1-83b3-e06a35434e67" />
+<img width="392" height="137" alt="Screenshot 2026-10-30 001854" src="https://github.com/user-attachments/assets/ff607e7b-4ff9-49e8-ae86-c2b062150f63" /><br>
+<img width="392" height="140" alt="Screenshot 2026-10-30 001939" src="https://github.com/user-attachments/assets/e2df865e-584e-4eb1-83b3-e06a35434e67" /><br>
 
 Cuplikan ini menunjukkan proses penambahan barang baru ke dalam sistem. Pengguna menginput data seperti nomor barang, nama barang, harga barang, stok barang, kemudian sistem menyimpan data tersebut ke dalam file JSON. Setelah proses berhasil, sistem menampilkan pesan “Barang berhasil ditambahkan.” dan memperbarui daftar barang yang tersedia di terminal.
 
 ## 3. Ubah Barang
 
-<img width="392" height="320" alt="Screenshot 2026-10-30 002115" src="https://github.com/user-attachments/assets/6886b043-00ec-46bc-9204-b5512a665fd3" />
+<img width="392" height="320" alt="Screenshot 2026-10-30 002115" src="https://github.com/user-attachments/assets/6886b043-00ec-46bc-9204-b5512a665fd3" /><br>
 
 Gambar ini memperlihatkan proses pengubahan data barang. Pengguna memasukkan nomor barang yang ingin diperbarui, kemudian sistem menampilkan data barang sebelumnya. Pengguna dapat mengubah nomor barang, nama barang, harga, maupun stok. Jika ada informasi yang tidak ingin diubah, pengguna cukup mengosongkan input atau memilih untuk tidak melakukan perubahan. Setelah proses selesai, sistem menyimpan data terbaru dan menampilkan pesan “Data barang berhasil diperbarui.”
 
 ## 4. Hapus Barang
 
-<img width="439" height="152" alt="Screenshot 2026-10-30 002132" src="https://github.com/user-attachments/assets/ad7c7e45-bb36-4df2-bf10-7070fe2bfdef" />
-<br>
-<img width="272" height="254" alt="Screenshot 2026-10-30 002204" src="https://github.com/user-attachments/assets/7d5b204a-f710-4f4d-9cb9-18a5280d7b2a" />
+<img width="439" height="152" alt="Screenshot 2026-10-30 002132" src="https://github.com/user-attachments/assets/ad7c7e45-bb36-4df2-bf10-7070fe2bfdef" /><br>
+<img width="272" height="254" alt="Screenshot 2026-10-30 002204" src="https://github.com/user-attachments/assets/7d5b204a-f710-4f4d-9cb9-18a5280d7b2a" /><br>
 
 Cuplikan ini menunjukkan proses penghapusan data barang dari sistem. Pengguna memasukkan nomor barang yang ingin dihapus, kemudian sistem meminta konfirmasi sebelum benar-benar menghapus data dari file JSON. Jika pengguna memilih “ya”, maka sistem menampilkan pesan “Barang berhasil dihapus.” dan memperbarui daftar produk yang tersisa
 
 ## 5. Kembali
 
-<img width="392" height="193" alt="Screenshot 2026-10-30 002216" src="https://github.com/user-attachments/assets/6b442dd0-174d-47e5-8225-3380ae6ce482" />
+<img width="392" height="193" alt="Screenshot 2026-10-30 002216" src="https://github.com/user-attachments/assets/6b442dd0-174d-47e5-8225-3380ae6ce482" /><br>
 
 Cuplikan ini menunjukan proses untuk kembali ke menu utama admin.
 
 # 2. Lihat Pengguna
 
-<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
-<br>
-<img width="435" height="267" alt="WhatsApp Image 2026-11-02 at 23 16 43" src="https://github.com/user-attachments/assets/8b741fac-eb19-4f79-b7ef-820afbb87b9e" />
+<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" /><br>
+<img width="435" height="267" alt="WhatsApp Image 2026-11-02 at 23 16 43" src="https://github.com/user-attachments/assets/8b741fac-eb19-4f79-b7ef-820afbb87b9e" /><br>
 
 Setelah admin memilih opsi 2 "Lihat Pengguna" pada Menu Admin, program menampilkan tabel daftar seluruh pengguna yang terdaftar. Tabel berisi kolom Username, Role, dan Saldo. Setelah itu program menampilkan pesan “Tekan Enter untuk melanjutkan” untuk kembali ke menu admin.
 
 # 3. Lihat seluruh transaksi
-<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
-<br>
-<img width="470" height="178" alt="WhatsApp Image 2026-11-02 at 23 16 42" src="https://github.com/user-attachments/assets/c8de77af-8ed4-4b80-bfae-12a6d0371a87" />
+<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" /><br>
+<img width="470" height="178" alt="WhatsApp Image 2026-11-02 at 23 16 42" src="https://github.com/user-attachments/assets/c8de77af-8ed4-4b80-bfae-12a6d0371a87" /><br>
 
 Setelah admin memilih opsi 3 "Lihat seluruh transaksi", program menampilkan tabel seluruh transaksi dari semua pengguna. Kolom yang ditampilkan adalah Kode, Username, Jenis (TOP UP atau PEMBELIAN), Detail, Total, dan Waktu. Setelah itu program menunggu admin menekan Enter untuk melanjutkan.
 
 # 4. Laporan Penjualan
-<img width="392" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
-<br>
-<img width="392" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/9aefbd80-42a1-4bbe-bddb-940a63955cf3" />
+<img width="392" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" /><br>
+<img width="392" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/9aefbd80-42a1-4bbe-bddb-940a63955cf3" /><br>
 
 Setelah admin memilih opsi 4 "Laporan Penjualan", program akan menampilkan laporan penjualan, Laporan ini dihitung dari seluruh transaksi berjenis pembelian. Setelah itu program menunggu admin menekan Enter untuk melanjutkan.
 
 # 5. Logout
 
-<img width="380" height="192" alt="WhatsApp Image 2026-11-02 at 23 16 43 (1)" src="https://github.com/user-attachments/assets/ffc24b14-b8c6-4975-8367-52aee4674c3b" />
+<img width="380" height="192" alt="WhatsApp Image 2026-11-02 at 23 16 43 (1)" src="https://github.com/user-attachments/assets/ffc24b14-b8c6-4975-8367-52aee4674c3b" /><br>
 
 Setelah admin memilih opsi ke 5 "Logout", program menampilkan pesan “Logout berhasil.” dan admin keluar dari akun. Program lalu meminta menekan Enter untuk kembali ke menu utama.
 
 ## LOGIN SEBAGAI USER
 
-<img width="417" height="208" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/9264bd49-ee1e-481b-85e1-a798826feee1" />
-<br>
-<img width="417" height="208" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/e1c9cb1b-bd65-4ce9-a9d6-e02939ee493a" />
+<img width="417" height="208" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/9264bd49-ee1e-481b-85e1-a798826feee1" /><br>
+<img width="417" height="208" alt="Screenshot 2026-10-30 001221" src="https://github.com/user-attachments/assets/e1c9cb1b-bd65-4ce9-a9d6-e02939ee493a" /><br>
 
 Pada Menu Utama, pengguna memilih opsi yang pertama "Registrasi". Program meminta pengisian username dan password ditampilkan sebagai tanda bintang demi keamanan. Jika data valid, program menampilkan pesan “Registrasi berhasil!” lalu menunggu Enter untuk melanjutkan.
 
 <br>
-<img width="417" height="208" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/60a3e244-b005-491b-8022-95e33b440566" />
-<br>
-<img width="417" height="208" alt="Screenshot 2026-10-30 001417" src="https://github.com/user-attachments/assets/d58146d6-b705-40b0-bce2-99c7ed92a7ec" />
+<img width="417" height="208" alt="Screenshot 2026-10-30 001235" src="https://github.com/user-attachments/assets/60a3e244-b005-491b-8022-95e33b440566" /><br>
+<img width="417" height="208" alt="Screenshot 2026-10-30 001417" src="https://github.com/user-attachments/assets/d58146d6-b705-40b0-bce2-99c7ed92a7ec" /><br>
 
 Setelah registrasi, pengguna memilih opsi kedua. Login pada Menu Utama, Jika login berhasil, program menampilkan Menu User dengan sapaan “Halo...” serta informasi saldo (awalnya Rp 0). 
 
@@ -389,32 +381,31 @@ Menu yang tersedia:
 
 ## 1. Lihat Barang
 
-<img width="415" height="251" alt="Screenshot 2026-10-30 001636" src="https://github.com/user-attachments/assets/74ea26a6-76ce-4c71-8241-bc7be40fcb3b" />
+<img width="415" height="251" alt="Screenshot 2026-10-30 001636" src="https://github.com/user-attachments/assets/74ea26a6-76ce-4c71-8241-bc7be40fcb3b" /><br>
 
 Program menampilkan daftar barang dalam bentuk tabel dengan kolom nomor barang, nama barang, harga, dan stok. Adapun contoh barang yang di masukkan adalah PDH KBM FT, Kaos FT, Gantungan kunci FT, Slayer FT, Sticker FT, Kaos Kaki FT, dan beberapa barang lain nya. Setelah itu program menunggu Enter untuk melanjutkan.
 
 ## 2. Top up saldo
 
-<img width="434" height="308" alt="Screenshot 2026-10-30 001505" src="https://github.com/user-attachments/assets/5d031474-456c-42f8-8d38-f8cfbe35dabe" />
+<img width="434" height="308" alt="Screenshot 2026-10-30 001505" src="https://github.com/user-attachments/assets/5d031474-456c-42f8-8d38-f8cfbe35dabe" /><br>
 
 Pengguna atau user memasukkan nominal Top Up yang di ingin kan, lalu program meminta konfirmasi "ya/tidak". Setelah menjawab y, program menampilkan "Top up berhasil" beserta invoice yang berisi kode transaksi, waktu, username, jenis (TOP UP), detail, total, dan sisa saldo.
 
 ## 3. Beli Barang
 
-<img width="371" height="285" alt="Screenshot 2026-10-30 001543" src="https://github.com/user-attachments/assets/ca1ddb71-96b5-4f44-b9ba-1df653141e0f" />
-<br>
-<img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/8fa2f261-cd37-4dc0-85ff-a225fdf7b0a1" />
+<img width="371" height="285" alt="Screenshot 2026-10-30 001543" src="https://github.com/user-attachments/assets/ca1ddb71-96b5-4f44-b9ba-1df653141e0f" /><br>
+<img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/8fa2f261-cd37-4dc0-85ff-a225fdf7b0a1" /><br>
 
 Program menampilkan daftar barang, lalu pengguna memasukkan nomor barang dan jumlah pembelian. Setelah pengguna konfirmasi dengan y pada “Lanjutkan pembayaran?”, program menampilkan “Pembelian berhasil!”.Lalu program menampilkan invoice pembelian.
 
 ## 4. Riwayat transaksi
 
-<img width="562" height="119" alt="Screenshot 2026-10-30 001610" src="https://github.com/user-attachments/assets/a026fe5e-8c2d-46e7-989b-57c07a0896d2" />
+<img width="562" height="119" alt="Screenshot 2026-10-30 001610" src="https://github.com/user-attachments/assets/a026fe5e-8c2d-46e7-989b-57c07a0896d2" /><br>
 
 Setelah pengguna konfirmasi dengan y pada “Lanjutkan pembayaran?”, program menampilkan “Pembelian berhasil!”.
 
 ## 5. Logout
 
-<img width="371" height="220" alt="WhatsApp Image 2026-11-02 at 23 41 10" src="https://github.com/user-attachments/assets/aaa62e46-0813-4f33-b925-f96c01139c4f" />
+<img width="371" height="220" alt="WhatsApp Image 2026-11-02 at 23 41 10" src="https://github.com/user-attachments/assets/aaa62e46-0813-4f33-b925-f96c01139c4f" /><br>
 
 Setelah pengguna memilih opsi ke 5, program menampilkan “Logout berhasil.” dan pengguna keluar dari akunnya. Program lalu meminta menekan Enter untuk kembali ke menu utama.
