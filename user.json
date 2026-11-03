@@ -1,1 +1,32 @@
-[]
+[
+    {
+        "username": "admin",
+        "password": "admin123",
+        "role": "admin",
+        "saldo": 0
+    },
+    {
+        "username": "faviano",
+        "password": "faviano",
+        "role": "user",
+        "saldo": 100000
+    },
+    {
+        "username": "rarawr",
+        "password": "rarawr",
+        "role": "user",
+        "saldo": 999999
+    },
+    {
+        "username": "salwaa",
+        "password": "salwaa",
+        "role": "user",
+        "saldo": 500000
+    },
+    {
+        "username": "alfiii",
+        "password": "alfiii",
+        "role": "user",
+        "saldo": 676767
+    }
+]
