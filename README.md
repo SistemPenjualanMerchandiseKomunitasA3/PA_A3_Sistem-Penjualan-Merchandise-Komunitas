@@ -370,15 +370,19 @@ Pengguna atau user memasukkan nominal Top Up yang di ingin kan, lalu program mem
 ## 3. Beli Barang
 
 <img width="371" height="285" alt="Screenshot 2026-10-30 001543" src="https://github.com/user-attachments/assets/ca1ddb71-96b5-4f44-b9ba-1df653141e0f" />
+<br>
+<img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/8fa2f261-cd37-4dc0-85ff-a225fdf7b0a1" />
 
-Program menampilkan daftar barang, lalu pengguna memasukkan nomor barang dan jumlah pembelian. Lalu program menampilkan 
+Program menampilkan daftar barang, lalu pengguna memasukkan nomor barang dan jumlah pembelian. Setelah pengguna konfirmasi dengan y pada “Lanjutkan pembayaran?”, program menampilkan “Pembelian berhasil!”.Lalu program menampilkan invoice pembelian.
 
 ## 4. Riwayat transaksi
 
-<img width="291" height="214" alt="Screenshot 2026-10-30 001551" src="https://github.com/user-attachments/assets/8fa2f261-cd37-4dc0-85ff-a225fdf7b0a1" />
-<br>
 <img width="562" height="119" alt="Screenshot 2026-10-30 001610" src="https://github.com/user-attachments/assets/a026fe5e-8c2d-46e7-989b-57c07a0896d2" />
+
+Setelah pengguna konfirmasi dengan y pada “Lanjutkan pembayaran?”, program menampilkan “Pembelian berhasil!”.
 
 ## 5. Logout
 
 <img width="742" height="441" alt="WhatsApp Image 2026-11-02 at 23 41 10" src="https://github.com/user-attachments/assets/aaa62e46-0813-4f33-b925-f96c01139c4f" />
+
+Setelah pengguna memilih opsi ke 5, program menampilkan “Logout berhasil.” dan pengguna keluar dari akunnya. Program lalu meminta menekan Enter untuk kembali ke menu utama.
