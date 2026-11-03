@@ -133,7 +133,7 @@ Pada function ini, program akan menampilkan halaman menu utama dengan memberikan
 ---
 
 # 5. Menu Registrasi
-<img width="613" height="653" alt="Screenshot 2026-11-03 221538" src="https://github.com/user-attachments/assets/5cdbeea2-a93d-4865-8c21-98210dcd051a" />
+<img width="613" height="653" alt="Screenshot 2026-11-03 221538" src="https://github.com/user-attachments/assets/5cdbeea2-a93d-4865-8c21-98210dcd051a" /><br>
 <img width="613" height="126" alt="Screenshot 2026-11-03 221613" src="https://github.com/user-attachments/assets/fa4a1e39-2424-469e-b7fa-68c92f9a180a" /><br>
 
 
@@ -156,7 +156,7 @@ Function ini digunakan untuk menampilkan seluruh daftar barang yang tersedia di 
 ---
 
 # 8. Tambah Barang
-<img width="613" height="625" alt="Screenshot 2026-11-03 221944" src="https://github.com/user-attachments/assets/8dca76c2-f91e-4369-a97b-894e7c3053de" />
+<img width="613" height="625" alt="Screenshot 2026-11-03 221944" src="https://github.com/user-attachments/assets/8dca76c2-f91e-4369-a97b-894e7c3053de" /><br>
 <img width="613" height="341" alt="Screenshot 2026-11-03 222003" src="https://github.com/user-attachments/assets/a7cfab2e-3c4d-490e-9c8d-e11d6d3473f3" /><br>
 
 
@@ -166,7 +166,7 @@ Function ini digunakan oleh admin untuk menambahkan barang baru ke dalam sistem.
 
 # 9. Ubah Barang
 
-<img width="613" height="670" alt="image" src="https://github.com/user-attachments/assets/f5d1f570-747e-4821-814c-2371b85790dd" />
+<img width="613" height="670" alt="image" src="https://github.com/user-attachments/assets/f5d1f570-747e-4821-814c-2371b85790dd" /><br>
 <img width="613" height="653" alt="image" src="https://github.com/user-attachments/assets/773af347-2c53-438b-bcad-401177ad1526" /><br>
 
 
@@ -175,7 +175,7 @@ Function ini digunakan oleh admin untuk mengubah informasi barang yang sudah ter
 ---
 
 # 10. Hapus Barang
-<img width="613" height="299" alt="Screenshot 2026-11-03 220605" src="https://github.com/user-attachments/assets/90d2b430-e84b-4523-8fc2-12071ffc6d58" />
+<img width="613" height="299" alt="Screenshot 2026-11-03 220605" src="https://github.com/user-attachments/assets/90d2b430-e84b-4523-8fc2-12071ffc6d58" /><br>
 <img width="613" height="625" alt="Screenshot 2026-11-03 220551" src="https://github.com/user-attachments/assets/de323b59-bb39-445f-81e8-5921f3fa54d6" /><br>
 
 
@@ -200,7 +200,7 @@ Function ini digunakan untuk menampilkan invoice sebagai bukti transaksi yang di
 ---
 
 # 13. Top Up Saldo
-<img width="613" height="656" alt="Screenshot 2026-11-03 220126" src="https://github.com/user-attachments/assets/68832910-020d-48f1-a95a-8cecb88af883" />
+<img width="613" height="656" alt="Screenshot 2026-11-03 220126" src="https://github.com/user-attachments/assets/68832910-020d-48f1-a95a-8cecb88af883" /><br>
 <img width="613" height="470" alt="Screenshot 2026-11-03 220147" src="https://github.com/user-attachments/assets/10aa5687-b166-454c-9565-5c0fae8ee601" /><br>
 
 Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, program akan membaca data pengguna dari file user.json dan data transaksi dari file transaksi.json. Setelah itu, program akan mencari akun berdasarkan username yang sedang login. Jika akun ditemukan, program akan menampilkan saldo saat ini. Kemudian, pengguna diminta memasukkan nominal top up. Pada bagian ini terdapat validasi menggunakan try-except untuk memastikan nominal yang dimasukkan berupa angka bulat, minimal Rp1, dan maksimal Rp10.000.000. Setelah nominal sesuai, program akan meminta konfirmasi kepada pengguna. Jika pengguna menyetujui, saldo akan ditambahkan dan data akun disimpan kembali ke user.json. Selanjutnya, program akan membuat kode transaksi yang terdiri dari awalan TRX, tiga angka acak, dan nomor urut transaksi. Data transaksi kemudian disimpan ke dalam transaksi.json dan ditampilkan melalui function cetak_invoice(). Contohnya, pengguna memiliki saldo Rp50.000 dan melakukan top up sebesar Rp100.000. Setelah berhasil, saldo pengguna akan menjadi Rp150.000 dan sistem akan menampilkan invoice top up.
@@ -209,9 +209,9 @@ Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, p
 
 # 14. Beli Barang
 
-<img width="613" height="611" alt="Screenshot 2026-11-03 214849" src="https://github.com/user-attachments/assets/8e91c8bf-d23e-431a-8d77-4f26e91c135b" />
-<img width="613" height="599" alt="Screenshot 2026-11-03 214911" src="https://github.com/user-attachments/assets/4369c5ff-9be6-4300-9d53-e5821304f128" />
-<img width="613" height="525" alt="WhatsApp Image 2026-11-03 at 21 54 54" src="https://github.com/user-attachments/assets/93fd610a-6706-4df6-b6bc-e9182ef4a17f" />
+<img width="613" height="611" alt="Screenshot 2026-11-03 214849" src="https://github.com/user-attachments/assets/8e91c8bf-d23e-431a-8d77-4f26e91c135b" /><br>
+<img width="613" height="599" alt="Screenshot 2026-11-03 214911" src="https://github.com/user-attachments/assets/4369c5ff-9be6-4300-9d53-e5821304f128" /><>br
+<img width="613" height="525" alt="WhatsApp Image 2026-11-03 at 21 54 54" src="https://github.com/user-attachments/assets/93fd610a-6706-4df6-b6bc-e9182ef4a17f" /><br>
 <img width="613" height="258" alt="Screenshot 2026-11-03 215000" src="https://github.com/user-attachments/assets/258e9f35-c795-4e37-b108-cb226bc5e6ff" /><br>
 
 
@@ -261,13 +261,18 @@ Function ini merupakan halaman utama khusus pengguna setelah berhasil login. Men
 
 ---
 
-# 20. Main Program
+# 20. Inisialisasi Data
 
-<img width="613" height="115" alt="image" src="https://github.com/user-attachments/assets/dc413889-8039-40f8-bad4-67ce3365cb16" /> <br>
-
-Pada bagian terakhir program, terdapat perulangan while True yang digunakan untuk menjalankan menu_utama(). Selain itu, terdapat try-except untuk menangani KeyboardInterrupt dan EOFError. Jika pengguna menekan Ctrl+C atau terjadi EOFError, program akan menampilkan pesan "No No Yaa!" dan mencoba menjalankan kembali menu utama. Namun, jika pengguna memilih keluar aplikasi secara normal, program akan berhenti menggunakan break.
+<img width="613" height="675" alt="image" src="https://github.com/user-attachments/assets/19614d8a-7a7c-4f73-8362-d0a5c721f818" /><br>
+<img width="613" height="186" alt="image" src="https://github.com/user-attachments/assets/2a892952-6ab2-4492-b619-4e2bf0830023" /> <br>
 
 ---
+
+# 21. Main Program
+
+<img width="613" height="147" alt="image" src="https://github.com/user-attachments/assets/b59a3fb8-a434-4a00-9a70-dc3a48d4f225" /><br>
+
+Pada bagian terakhir program, terdapat perulangan while True yang digunakan untuk menjalankan menu_utama(). Selain itu, terdapat try-except untuk menangani KeyboardInterrupt dan EOFError. Jika pengguna menekan Ctrl+C atau terjadi EOFError, program akan menampilkan pesan "No No Yaa!" dan mencoba menjalankan kembali menu utama. Namun, jika pengguna memilih keluar aplikasi secara normal, program akan berhenti menggunakan break.
 
 
 # Screenshot Output
