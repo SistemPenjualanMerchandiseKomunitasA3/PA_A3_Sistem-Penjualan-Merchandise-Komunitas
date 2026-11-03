@@ -79,36 +79,30 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 | :--- | :---: | :---: |
 | 1 | bersih() | Membersihkan tampilan terminal sebelum menu atau informasi baru ditampilkan |
 | 2 | asalpicik() | Menangani kesalahan input ketika pengguna menekan tombol Ctrl+C atau terjadi EOFError. Fungsi ini menampilkan pesan "No No Yaa!" dan mengulangi proses input tanpa menghentikan program
-| 2 | menu_utama() | Menampilkan menu utama yang berisi pilihan registrasi, login, dan keluar dari aplikasi |
-| 3 | registrasi() | Memproses pembuatan akun baru dan menyimpan data user ke file user.json |
-| 4 | login() | Memeriksa username dan password serta mengarahkan user ke menu sesuai dengan perannya |
-| 5 | tampilkan_barang() | Menampilkan daftar merchandise beserta ID, nama, harga, dan stok barang |
-| 6 | tambah_barang() | Menambahkan merchandise baru ke dalam daftar barang |
-| 7 | ubah_barang() | Memperbarui nama, harga, atau stok barang yang sudah tersimpan |
-| 8 | hapus_barang() | Menghapus barang berdasarkan ID yang dipilih setelah user mengonfirmasi penghapusan |
-| 9 | menu_crud_barang() | Menampilkan menu pengelolaan barang yang mencakup tambah, lihat, ubah, dan hapus data |
-| 10 | cetak_invoice() | Menampilkan bukti transaksi yang berisi kode transaksi, waktu, username, jenis transaksi, total pembayaran, dan sisa saldo |
-| 11 | top_up() | Menambahkan saldo user dan mencatat transaksi pengisian saldo |
-| 12 | beli_barang() | Memproses pembelian merchandise, menghitung total harga, memeriksa saldo, mengurangi stok, dan menyimpan transaksi |
-| 13 | riwayat_transaksi() | Menampilkan riwayat transaksi, baik seluruh transaksi maupun transaksi milik user tertentu |
-| 14 | laporan_admin() | Menghitung total pendapatan, jumlah transaksi pembelian, dan produk terlaris |
-| 15 | tampilkan_users() | Menampilkan daftar user beserta peran dan saldo yang dimiliki |
-| 16 | menu_admin() | Menampilkan menu khusus Admin untuk mengelola barang, melihat pengguna, memeriksa transaksi, dan melihat laporan penjualan |
-| 17 | menu_user() | Menampilkan menu user untuk melihat barang, mengisi saldo, membeli barang, dan melihat riwayat transaksi |
+| 3 | menu_utama() | Menampilkan menu utama yang berisi pilihan registrasi, login, dan keluar dari aplikasi |
+| 4 | registrasi() | Memproses pembuatan akun baru dan menyimpan data user ke file user.json |
+| 5 | login() | Memeriksa username dan password serta mengarahkan user ke menu sesuai dengan perannya |
+| 6 | tampilkan_barang() | Menampilkan daftar merchandise beserta ID, nama, harga, dan stok barang |
+| 7 | tambah_barang() | Menambahkan merchandise baru ke dalam daftar barang |
+| 8 | ubah_barang() | Memperbarui nama, harga, atau stok barang yang sudah tersimpan |
+| 9 | hapus_barang() | Menghapus barang berdasarkan ID yang dipilih setelah user mengonfirmasi penghapusan |
+| 10 | menu_crud_barang() | Menampilkan menu pengelolaan barang yang mencakup tambah, lihat, ubah, dan hapus data |
+| 11 | cetak_invoice() | Menampilkan bukti transaksi yang berisi kode transaksi, waktu, username, jenis transaksi, total pembayaran, dan sisa saldo |
+| 12 | top_up() | Menambahkan saldo user dan mencatat transaksi pengisian saldo |
+| 13 | beli_barang() | Memproses pembelian merchandise, menghitung total harga, memeriksa saldo, mengurangi stok, dan menyimpan transaksi |
+| 14 | riwayat_transaksi() | Menampilkan riwayat transaksi, baik seluruh transaksi maupun transaksi milik user tertentu |
+| 15 | laporan_admin() | Menghitung total pendapatan, jumlah transaksi pembelian, dan produk terlaris |
+| 16 | tampilkan_users() | Menampilkan daftar user beserta peran dan saldo yang dimiliki |
+| 17 | menu_admin() | Menampilkan menu khusus Admin untuk mengelola barang, melihat pengguna, memeriksa transaksi, dan melihat laporan penjualan |
+| 18 | menu_user() | Menampilkan menu user untuk melihat barang, mengisi saldo, membeli barang, dan melihat riwayat transaksi |
 
 
 
 # Alur Program
 
 ## 1. Library
-```python
-import os
-import time
-import json
-from prettytable import PrettyTable
-from pwinput import pwinput
-import random
-```
+<img width="620" height="89" alt="image" src="https://github.com/user-attachments/assets/78fe4e04-be6e-4932-9243-1adae0a8bb33" />
+
 
 Di awal program ini kami menggunakan beberapa library dan modul seperti os, time, json, PrettyTable, pwinput, dan random. Os sendiri berfungsi untuk membersihkan tampilan layar terminal agar lebih bersih dan rapi. Time digunakan untuk memberikan jeda waktu pada program serta mendapatkan informasi tanggal transaksi. Json digunakan untuk membaca dan menyimpan data dalam format JSON. PrettyTable digunakan untuk menampilkan data dalam bentuk tabel agar lebih terstruktur. Pwinput digunakan untuk menyembunyikan karakter password ketika pengguna melakukan input. Terakhir, Random digunakan untuk menghasilkan angka secara acak yang nantinya digunakan sebagai bagian dari kode transaksi.
 
