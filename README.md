@@ -348,7 +348,7 @@ Setelah admin memilih opsi 2 "Lihat Pengguna" pada Menu Admin, program menampilk
 # 3. Lihat seluruh transaksi
 <img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
 <br>
-<img width="978" height="357" alt="WhatsApp Image 2026-11-02 at 23 16 42" src="https://github.com/user-attachments/assets/c8de77af-8ed4-4b80-bfae-12a6d0371a87" />
+<img width="470" height="178" alt="WhatsApp Image 2026-11-02 at 23 16 42" src="https://github.com/user-attachments/assets/c8de77af-8ed4-4b80-bfae-12a6d0371a87" />
 
 Setelah admin memilih opsi 3 "Lihat seluruh transaksi", program menampilkan tabel seluruh transaksi dari semua pengguna. Kolom yang ditampilkan adalah Kode, Username, Jenis (TOP UP atau PEMBELIAN), Detail, Total, dan Waktu. Setelah itu program menunggu admin menekan Enter untuk melanjutkan.
 
@@ -361,7 +361,7 @@ Setelah admin memilih opsi 4 "Laporan Penjualan", program akan menampilkan lapor
 
 # 5. Logout
 
-<img width="760" height="385" alt="WhatsApp Image 2026-11-02 at 23 16 43 (1)" src="https://github.com/user-attachments/assets/ffc24b14-b8c6-4975-8367-52aee4674c3b" />
+<img width="380" height="192" alt="WhatsApp Image 2026-11-02 at 23 16 43 (1)" src="https://github.com/user-attachments/assets/ffc24b14-b8c6-4975-8367-52aee4674c3b" />
 
 Setelah admin memilih opsi ke 5 "Logout", program menampilkan pesan “Logout berhasil.” dan admin keluar dari akun. Program lalu meminta menekan Enter untuk kembali ke menu utama.
 
@@ -415,6 +415,6 @@ Setelah pengguna konfirmasi dengan y pada “Lanjutkan pembayaran?”, program m
 
 ## 5. Logout
 
-<img width="742" height="441" alt="WhatsApp Image 2026-11-02 at 23 41 10" src="https://github.com/user-attachments/assets/aaa62e46-0813-4f33-b925-f96c01139c4f" />
+<img width="371" height="220" alt="WhatsApp Image 2026-11-02 at 23 41 10" src="https://github.com/user-attachments/assets/aaa62e46-0813-4f33-b925-f96c01139c4f" />
 
 Setelah pengguna memilih opsi ke 5, program menampilkan “Logout berhasil.” dan pengguna keluar dari akunnya. Program lalu meminta menekan Enter untuk kembali ke menu utama.
