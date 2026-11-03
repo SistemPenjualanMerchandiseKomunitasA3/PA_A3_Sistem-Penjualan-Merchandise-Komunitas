@@ -130,6 +130,7 @@ Pada function ini kami membuat sebuah function khusus untuk menangani input dari
 
 Pada function ini, program akan menampilkan halaman menu utama dengan memberikan tiga pilihan, yaitu registrasi, login, dan keluar aplikasi. Di sini kami menggunakan perulangan while True agar menu dapat terus ditampilkan sampai pengguna memilih opsi keluar. Kemudian, terdapat percabangan if, elif, dan else untuk menentukan tindakan berdasarkan pilihan pengguna. Jika pengguna memilih angka 1, program akan menjalankan function registrasi(). Jika memilih angka 2, program akan menjalankan function login(). Sementara itu, jika memilih angka 3, program akan menampilkan pesan bahwa program selesai dan menghentikan perulangan menggunakan break. Apabila pengguna memasukkan pilihan selain ketiga opsi tersebut, program akan menampilkan pesan bahwa pilihan tidak tersedia.
 
+---
 
 # 5. Menu Registrasi
 <img width="613" height="653" alt="Screenshot 2026-11-03 221538" src="https://github.com/user-attachments/assets/5cdbeea2-a93d-4865-8c21-98210dcd051a" />
@@ -138,15 +139,21 @@ Pada function ini, program akan menampilkan halaman menu utama dengan memberikan
 
 Function ini digunakan untuk melakukan pendaftaran akun baru. Pada awal function, program akan membersihkan layar dan menampilkan halaman registrasi. Selanjutnya, program akan membaca data pengguna dari file user.json menggunakan json.load(). Setelah itu, program akan meminta pengguna memasukkan username dan password dengan beberapa validasi. Pada bagian username, program memastikan bahwa username tidak boleh kosong, memiliki minimal lima karakter, dan belum digunakan oleh akun lain. Pengecekan username dilakukan menggunakan perulangan for dengan membandingkan username yang dimasukkan dengan data pengguna yang sudah tersimpan. Kemudian, pada bagian password, program memastikan bahwa password tidak boleh kosong dan memiliki minimal lima karakter. Jika seluruh persyaratan sudah terpenuhi, program akan membuat data akun baru yang berisi username, password, role sebagai user, dan saldo awal sebesar nol. Terakhir, data akun akan dimasukkan ke dalam daftar pengguna menggunakan append() dan disimpan kembali ke file user.json menggunakan json.dump().
 
+---
+
 # 6. Menu Login
 <img width="613" height="554" alt="image" src="https://github.com/user-attachments/assets/02d601e7-ee6b-40b7-87ac-e3b0a5299993" /><br>
 
 Function ini digunakan untuk melakukan proses autentikasi atau pemeriksaan akun pengguna sebelum masuk ke dalam sistem. Pertama, program akan membaca data akun dari file user.json. Di sini juga terdapat penanganan error menggunakan try-except, yaitu FileNotFoundError jika file tidak ditemukan dan json.JSONDecodeError jika isi file JSON tidak valid. Selanjutnya, program memberikan kesempatan login sebanyak tiga kali menggunakan variabel kesempatan = 3. Pengguna diminta memasukkan username dan password, kemudian program akan mencocokkan data tersebut dengan akun yang tersimpan di dalam file JSON. Jika username dan password sesuai, program akan menampilkan pesan login berhasil. Setelah itu, program akan memeriksa nilai role akun tersebut. Jika role adalah admin, pengguna akan diarahkan ke function menu_admin(), sedangkan jika role adalah user, pengguna akan diarahkan ke function menu_user(). Sebaliknya, jika username atau password salah, kesempatan login akan dikurangi satu. Apabila kesempatan sudah habis, program akan menampilkan pesan bahwa batas percobaan login telah tercapai. Contohnya, ketika admin memasukkan username dan password yang benar, program akan langsung mengarahkannya ke menu admin, sedangkan pengguna biasa akan diarahkan ke menu user.
 
+---
+
 # 7. Tampilkan Barang
 <img width="613" height="415" alt="image" src="https://github.com/user-attachments/assets/cc0579f8-5ada-4e61-a7e2-6838c971e2f0" /><br>
 
 Function ini digunakan untuk menampilkan seluruh daftar barang yang tersedia di dalam sistem. Pertama, program akan membaca data barang dari file barang.json. Jika file tidak ditemukan, program akan menggunakan daftar kosong. Namun, jika file tidak valid, program akan menampilkan pesan error. Selanjutnya, program akan memeriksa apakah terdapat barang di dalam file tersebut. Jika terdapat barang, program akan menggunakan PrettyTable untuk membuat tabel dengan empat kolom, yaitu nomor barang, nama barang, harga, dan stok. Kemudian, program menggunakan perulangan for untuk memasukkan setiap data barang ke dalam tabel.
+
+---
 
 # 8. Tambah Barang
 <img width="613" height="625" alt="Screenshot 2026-11-03 221944" src="https://github.com/user-attachments/assets/8dca76c2-f91e-4369-a97b-894e7c3053de" />
@@ -154,6 +161,8 @@ Function ini digunakan untuk menampilkan seluruh daftar barang yang tersedia di 
 
 
 Function ini digunakan oleh admin untuk menambahkan barang baru ke dalam sistem. Pertama, program akan membaca data barang dari file barang.json. Setelah itu, admin diminta memasukkan nomor barang dan nama barang. Program akan melakukan validasi untuk memastikan nomor barang dan nama barang tidak kosong serta nomor barang belum pernah digunakan. Selanjutnya, admin diminta memasukkan harga dan stok barang. Pada bagian ini digunakan try-except untuk memastikan harga dan stok yang dimasukkan berupa angka bulat. Harga harus lebih dari nol, sedangkan stok tidak boleh bernilai negatif. Jika seluruh data sudah sesuai, program akan menambahkan barang baru menggunakan append() dan menyimpan perubahan tersebut ke dalam file barang.json. Contohnya, admin ingin menambahkan barang baru dengan nomor KBMFT6, nama Topi FT, harga Rp75.000, dan stok 20. Setelah semua data valid, barang tersebut akan tersimpan dan masuk ke dalam daftar barang.
+
+---
 
 # 9. Ubah Barang
 
@@ -163,15 +172,19 @@ Function ini digunakan oleh admin untuk menambahkan barang baru ke dalam sistem.
 
 Function ini digunakan oleh admin untuk mengubah informasi barang yang sudah tersimpan di dalam sistem. Pertama, program akan membaca data dari file barang.json, kemudian menampilkan seluruh daftar barang menggunakan PrettyTable. Setelah itu, admin diminta memasukkan nomor barang yang ingin diubah. Program akan mencari barang tersebut menggunakan perulangan for. Jika barang tidak ditemukan, program akan menampilkan pesan bahwa barang tidak tersedia. Namun, jika barang ditemukan, admin diberikan pilihan untuk mengubah nama, harga, dan stok barang. Pada bagian nama, admin cukup memasukkan nama baru. Jika input dikosongkan, nama barang akan tetap menggunakan data sebelumnya. Kemudian, untuk harga dan stok, program memberikan pilihan menggunakan input y atau n. Jika admin memilih y, program akan meminta data baru dan melakukan validasi angka. Terakhir, seluruh perubahan akan disimpan kembali ke file barang.json. Contohnya, admin ingin mengubah harga Kaos FT dari Rp100.000 menjadi Rp120.000. Admin cukup memilih barang tersebut, kemudian memilih y pada bagian ubah harga dan memasukkan harga baru.
 
+---
+
 # 10. Hapus Barang
 <img width="613" height="299" alt="Screenshot 2026-11-03 220605" src="https://github.com/user-attachments/assets/90d2b430-e84b-4523-8fc2-12071ffc6d58" />
-<img width="613" height="625" alt="Screenshot 2026-11-03 220551" src="https://github.com/user-attachments/assets/de323b59-bb39-445f-81e8-5921f3fa54d6" />
+<img width="613" height="625" alt="Screenshot 2026-11-03 220551" src="https://github.com/user-attachments/assets/de323b59-bb39-445f-81e8-5921f3fa54d6" /><br>
 
 
-Function ini digunakan oleh admin untuk menghapus barang yang sudah tersimpan di dalam sistem. Pertama, program akan membaca data barang dari file barang.json. Jika data tersedia, program akan menampilkan daftar barang menggunakan PrettyTable. Kemudian, admin diminta memasukkan nomor barang yang ingin dihapus. Program akan mencari barang berdasarkan nomor yang dimasukkan. Jika barang ditemukan, program akan meminta konfirmasi penghapusan menggunakan pilihan y atau n. Jika admin memilih y, barang akan dihapus menggunakan perintah remove(). Namun, jika admin memilih n, proses penghapusan akan dibatalkan. Setelah penghapusan berhasil, data terbaru akan disimpan kembali ke file barang.json. Contohnya, admin ingin menghapus barang dengan nomor KBMFT6. Setelah memilih barang tersebut dan memberikan konfirmasi y, barang akan dihapus dari daftar barang.
+Function ini digunakan oleh admin untuk menghapus barang yang sudah tersimpan di dalam sistem. Pertama, program akan membaca data barang dari file barang.json. Jika data tersedia, program akan menampilkan daftar barang menggunakan PrettyTable. Kemudian, admin diminta memasukkan nomor barang yang ingin dihapus. Program akan mencari barang berdasarkan nomor yang dimasukkan. Jika barang ditemukan, program akan meminta konfirmasi penghapusan menggunakan pilihan y atau n. Jika admin memilih y, barang akan dihapus menggunakan perintah remove(). Namun, jika admin memilih n, proses penghapusan akan dibatalkan. Setelah penghapusan berhasil, data terbaru akan disimpan kembali ke file barang.json. Contohnya, admin ingin menghapus barang dengan nomor KBMFT6. Setelah memilih barang tersebut dan memberikan konfirmasi y/n, barang akan dihapus dari daftar barang.
+
+---
 
 # 11. Menu Kelola Barang
-<img width="613" height="515" alt="image" src="https://github.com/user-attachments/assets/57e55b24-c6ab-43d8-a870-9bdbf37e6895" />
+<img width="613" height="515" alt="image" src="https://github.com/user-attachments/assets/57e55b24-c6ab-43d8-a870-9bdbf37e6895" /><br>
 
 Function ini merupakan menu khusus untuk mengelola data barang atau yang biasa disebut CRUD, yaitu Create, Read, Update, dan Delete. Pada menu ini, program memberikan lima pilihan, yaitu menampilkan barang, menambahkan barang, mengubah barang, menghapus barang, dan kembali ke menu sebelumnya. Setiap pilihan akan menjalankan function yang sesuai dengan kebutuhan admin. Di sini juga digunakan perulangan while True agar admin dapat melakukan pengelolaan barang secara berulang kali tanpa harus kembali ke menu utama. Contohnya, jika admin memilih opsi nomor 2, program akan menjalankan function tambah_barang(). Setelah selesai, admin dapat kembali ke menu pengelolaan barang dan memilih opsi lainnya.
 
@@ -179,17 +192,16 @@ Function ini merupakan menu khusus untuk mengelola data barang atau yang biasa d
 
 # 12. Cetak Invoice
 
-<img width="613" height="302" alt="image" src="https://github.com/user-attachments/assets/941c8169-60e3-4428-b6f9-89df226a68dc" />
+<img width="613" height="302" alt="image" src="https://github.com/user-attachments/assets/941c8169-60e3-4428-b6f9-89df226a68dc" /><br>
 
 
 Function ini digunakan untuk menampilkan invoice sebagai bukti transaksi yang dilakukan oleh pengguna. Di dalam function ini, kami menggunakan PrettyTable dengan dua kolom, yaitu keterangan dan detail. Informasi yang ditampilkan meliputi kode transaksi, waktu transaksi, username, jenis transaksi, detail transaksi, total pembayaran, dan sisa saldo setelah transaksi. Seluruh informasi tersebut diambil dari parameter data yang dikirimkan oleh function pemanggil. Contohnya, setelah pengguna berhasil melakukan pembelian Kaos FT sebanyak dua buah, program akan menampilkan invoice yang berisi total pembayaran sebesar Rp200.000 beserta sisa saldo pengguna.
 
+---
+
 # 13. Top Up Saldo
 <img width="613" height="656" alt="Screenshot 2026-11-03 220126" src="https://github.com/user-attachments/assets/68832910-020d-48f1-a95a-8cecb88af883" />
-<img width="613" height="470" alt="Screenshot 2026-11-03 220147" src="https://github.com/user-attachments/assets/10aa5687-b166-454c-9565-5c0fae8ee601" />
-
-
-
+<img width="613" height="470" alt="Screenshot 2026-11-03 220147" src="https://github.com/user-attachments/assets/10aa5687-b166-454c-9565-5c0fae8ee601" /><br>
 
 Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, program akan membaca data pengguna dari file user.json dan data transaksi dari file transaksi.json. Setelah itu, program akan mencari akun berdasarkan username yang sedang login. Jika akun ditemukan, program akan menampilkan saldo saat ini. Kemudian, pengguna diminta memasukkan nominal top up. Pada bagian ini terdapat validasi menggunakan try-except untuk memastikan nominal yang dimasukkan berupa angka bulat, minimal Rp1, dan maksimal Rp10.000.000. Setelah nominal sesuai, program akan meminta konfirmasi kepada pengguna. Jika pengguna menyetujui, saldo akan ditambahkan dan data akun disimpan kembali ke user.json. Selanjutnya, program akan membuat kode transaksi yang terdiri dari awalan TRX, tiga angka acak, dan nomor urut transaksi. Data transaksi kemudian disimpan ke dalam transaksi.json dan ditampilkan melalui function cetak_invoice(). Contohnya, pengguna memiliki saldo Rp50.000 dan melakukan top up sebesar Rp100.000. Setelah berhasil, saldo pengguna akan menjadi Rp150.000 dan sistem akan menampilkan invoice top up.
 
@@ -200,7 +212,7 @@ Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, p
 <img width="613" height="611" alt="Screenshot 2026-11-03 214849" src="https://github.com/user-attachments/assets/8e91c8bf-d23e-431a-8d77-4f26e91c135b" />
 <img width="613" height="599" alt="Screenshot 2026-11-03 214911" src="https://github.com/user-attachments/assets/4369c5ff-9be6-4300-9d53-e5821304f128" />
 <img width="613" height="525" alt="WhatsApp Image 2026-11-03 at 21 54 54" src="https://github.com/user-attachments/assets/93fd610a-6706-4df6-b6bc-e9182ef4a17f" />
-<img width="613" height="258" alt="Screenshot 2026-11-03 215000" src="https://github.com/user-attachments/assets/258e9f35-c795-4e37-b108-cb226bc5e6ff" />
+<img width="613" height="258" alt="Screenshot 2026-11-03 215000" src="https://github.com/user-attachments/assets/258e9f35-c795-4e37-b108-cb226bc5e6ff" /><br>
 
 
 Function ini digunakan oleh pengguna untuk melakukan pembelian barang yang tersedia di dalam sistem. Pertama, program akan membaca data pengguna, barang, dan transaksi dari masing-masing file JSON. Kemudian, program akan mencari akun pengguna berdasarkan username yang sedang login dan menampilkan daftar barang menggunakan PrettyTable. Setelah itu, pengguna diminta memasukkan nomor barang yang ingin dibeli. Program akan memeriksa apakah barang ditemukan, apakah stok masih tersedia, dan apakah jumlah pembelian tidak melebihi stok yang tersedia. Selanjutnya, program menghitung total pembayaran dengan mengalikan harga barang dan jumlah pembelian. Sebelum pembayaran dilakukan, program akan memeriksa apakah saldo pengguna mencukupi. Jika saldo mencukupi, pengguna akan diminta memberikan konfirmasi pembayaran. Apabila pengguna menyetujui, saldo akan dikurangi sesuai total pembelian dan stok barang juga akan berkurang sesuai jumlah yang dibeli. Terakhir, perubahan data pengguna dan barang akan disimpan ke dalam file JSON. Program juga akan membuat data transaksi baru dan menampilkan invoice sebagai bukti pembelian. Contohnya, pengguna membeli dua Kaos FT dengan harga masing-masing Rp100.000. Maka total pembayaran adalah Rp200.000. Jika saldo mencukupi dan pengguna menyetujui pembayaran, saldo akan berkurang Rp200.000 dan stok barang berkurang sebanyak dua buah.
@@ -208,7 +220,7 @@ Function ini digunakan oleh pengguna untuk melakukan pembelian barang yang terse
 ---
 
 # 15. Riwayat Transaksi
-<img width="613" height="487" alt="image" src="https://github.com/user-attachments/assets/e5b32106-6715-407b-859e-abd65267a4ae" />
+<img width="613" height="487" alt="image" src="https://github.com/user-attachments/assets/e5b32106-6715-407b-859e-abd65267a4ae" /><br>
  <br>
 
 Function ini digunakan untuk menampilkan riwayat transaksi yang telah dilakukan di dalam sistem. Pertama, program akan membaca data transaksi dari file transaksi.json. Jika file belum tersedia, program akan menggunakan daftar kosong. Kemudian, program membuat tabel menggunakan PrettyTable dengan enam kolom, yaitu kode transaksi, username, jenis transaksi, detail, total pembayaran, dan waktu transaksi. Pada bagian ini terdapat parameter username=None yang digunakan untuk membedakan tampilan riwayat transaksi antara admin dan user. Jika parameter username tidak diberikan, program akan menampilkan seluruh transaksi. Namun, jika username diberikan, program hanya akan menampilkan transaksi milik pengguna tersebut. Contohnya, ketika admin memilih menu riwayat transaksi, seluruh transaksi dari semua pengguna akan ditampilkan. Sementara itu, jika user membuka riwayat transaksi, hanya transaksi yang dilakukan oleh akun tersebut yang akan ditampilkan.
