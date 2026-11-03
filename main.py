@@ -439,3 +439,286 @@ def menu_crud_barang():
 
         if pilihan != "5":
             asalpicik("\nTekan Enter untuk melanjutkan...")
+
+
+# Buat Cetak Invoice
+def cetak_invoice(data):
+    tabel = PrettyTable()
+    tabel.field_names = ["Keterangan", "Detail"]
+
+    tabel.add_row(["Kode Transaksi", data["kode"]])
+    tabel.add_row(["Waktu", data["waktu"]])
+    tabel.add_row(["Username", data["username"]])
+    tabel.add_row(["Jenis", data["jenis"]])
+    tabel.add_row(["Detail", data["detail"]])
+    tabel.add_row([
+        "Total",
+        "Rp" + format(data["total"], ",")
+    ])
+    tabel.add_row([
+        "Sisa Saldo",
+        "Rp" + format(data["saldo_setelah"], ",")
+    ])
+
+    print("\n============ Invoice ============")
+    print(tabel)
+    print("=================================")
+
+# Top Up
+def top_up(username):
+    bersih()
+
+    try:
+        with open("user.json", "r") as file:
+            users = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Data pengguna tidak tersedia atau tidak valid.")
+        return
+
+    try:
+        with open("transaksi.json", "r") as file:
+            transaksi = json.load(file)
+    except FileNotFoundError:
+        transaksi = []
+    except json.JSONDecodeError:
+        print("File transaksi.json tidak valid.")
+        return
+
+    akun = None
+
+    for data_akun in users:
+        if data_akun["username"].lower() == username.lower():
+            akun = data_akun
+            break
+
+    if akun is None:
+        print("Pengguna tidak ditemukan.")
+        return
+
+    print("================================================================")
+    print("|                       Top Up Saldo                           |")
+    print("================================================================")
+    print("Saldo saat ini: Rp", format(akun["saldo"], ","))
+
+    while True:
+        try:
+            jumlah = int(asalpicik("Nominal top up: Rp"))
+
+            if jumlah < 1:
+                print("Nominal minimal Rp1.")
+            elif jumlah > 10000000:
+                print("Nominal top up maksimal Rp10.000.000")    
+            else:
+                break
+        except ValueError:        
+            print("Input harus berupa angka bulat!")
+
+    konfirtopup = asalpicik(f"Apakah Anda yakin ingin top up sebesar Rp {format(jumlah, ',')}? (y/n): ")
+    if konfirtopup != "y":
+        print("Top up dibatalkan.")
+        return
+
+    akun["saldo"] += jumlah
+    with open("user.json", "w") as file:
+        json.dump(users, file, indent=4)
+    waktu = time.strftime("%Y-%m-%d")
+    awalun = "TRX"
+    angka_acak = str(random.randint(100, 999))
+    nomor_urut = str(len(transaksi) + 1).zfill(3)
+    kode = awalun + angka_acak + nomor_urut
+
+    data = {
+        "kode": kode,
+        "username": akun["username"],
+        "jenis": "TOP UP",
+        "detail": "Top up saldo",
+        "total": jumlah,
+        "waktu": waktu,
+        "saldo_setelah": akun["saldo"]
+    }
+
+    transaksi.append(data)
+
+    with open("transaksi.json", "w") as file:
+        json.dump(transaksi, file, indent=4)
+
+    print("Top up berhasil!")
+    cetak_invoice(data)
+
+# Membeli Barang (User)
+def beli_barang(username):
+    bersih()
+
+    try:
+        with open("user.json", "r") as file:
+            users = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Data pengguna tidak tersedia atau tidak valid.")
+        return
+
+    try:
+        with open("barang.json", "r") as file:
+            barang = json.load(file)
+    except (FileNotFoundError, json.JSONDecodeError):
+        print("Data barang tidak tersedia atau tidak valid.")
+        return
+
+    try:
+        with open("transaksi.json", "r") as file:
+            transaksi = json.load(file)
+    except FileNotFoundError:
+        transaksi = []
+    except json.JSONDecodeError:
+        print("File transaksi.json tidak valid.")
+        return
+
+    akun = None
+
+    for data_akun in users:
+        if data_akun["username"].lower() == username.lower():
+            akun = data_akun
+            break
+
+    if akun is None:
+        print("Pengguna tidak ditemukan.")
+        return
+
+    if not barang:
+        print("Belum ada barang tersedia.")
+        return
+
+    tabel = PrettyTable()
+    tabel.field_names = ["No", "Nama Barang", "Harga", "Stok"]
+
+    for item in barang:
+        tabel.add_row([
+            item["no"],
+            item["nama"],
+            "Rp" + format(item["harga"], ","),
+            item["stok"]
+        ])
+
+    print(tabel)
+
+    id_barang = asalpicik("Masukkan No barang: ").strip().upper()
+    item_ditemukan = None
+
+    for item in barang:
+        if item["no"].upper() == id_barang:
+            item_ditemukan = item
+            break
+
+    if item_ditemukan is None:
+        print("Barang tidak ditemukan.")
+        return
+
+    if item_ditemukan["stok"] <= 0:
+        print("Stok barang habis.")
+        return
+
+    while True:
+        try:
+            jumlah = int(asalpicik("Jumlah pembelian: "))
+
+            if jumlah < 1:
+                print("Jumlah minimal 1.")
+            elif jumlah > item_ditemukan["stok"]:
+                print("Stok barang tidak mencukupi.")
+            else:
+                break
+
+        except ValueError:
+            print("Input harus berupa angka bulat!")
+
+    total = item_ditemukan["harga"] * jumlah
+
+    print("Nama barang:", item_ditemukan["nama"])
+    print("Jumlah:", jumlah)
+    print("Total: Rp", format(total, ","))
+    print("Saldo: Rp", format(akun["saldo"], ","))
+
+    if akun["saldo"] < total:
+        print("Saldo tidak mencukupi. Silakan top up.")
+        return
+
+    while True:
+        jawaban = asalpicik("Lanjutkan pembayaran? (y/n): ").lower()
+
+        if jawaban == "y":
+            break
+
+        elif jawaban == "n":
+            print("Pembelian dibatalkan.")
+            return
+
+        else:
+            print("Masukkan y atau n.")
+
+    akun["saldo"] -= total
+    item_ditemukan["stok"] -= jumlah
+
+    with open("user.json", "w") as file:
+        json.dump(users, file, indent=4)
+
+    with open("barang.json", "w") as file:
+        json.dump(barang, file, indent=4)
+
+    waktu = time.strftime("%Y-%m-%d")
+    awalun = "TRX"
+    angka_acak = str(random.randint(100, 999))
+    nomor_urut = str(len(transaksi) + 1).zfill(3)
+    kode = awalun + angka_acak + nomor_urut
+
+    data = {
+        "kode": kode,
+        "username": akun["username"],
+        "jenis": "PEMBELIAN",
+        "detail": item_ditemukan["nama"] + " x " + str(jumlah),
+        "total": total,
+        "waktu": waktu,
+        "saldo_setelah": akun["saldo"]
+    }
+
+    transaksi.append(data)
+
+    with open("transaksi.json", "w") as file:
+        json.dump(transaksi, file, indent=4)
+
+    print("Pembelian berhasil!")
+    cetak_invoice(data)
+
+# Riwayat Transaksi
+def riwayat_transaksi(username=None):
+    bersih()
+    try:
+        with open("transaksi.json", "r") as file:
+            transaksi = json.load(file)
+    except FileNotFoundError:
+        transaksi = []
+    except json.JSONDecodeError:
+        print("File transaksi.json tidak valid.")
+        return
+
+    tabel = PrettyTable()
+    tabel.field_names = [
+        "Kode", "Username", "Jenis",
+        "Detail", "Total", "Waktu"
+    ]
+
+    ditemukan = False
+
+    for data in transaksi:
+        if username is None or data["username"] == username:
+            tabel.add_row([
+                data["kode"],
+                data["username"],
+                data["jenis"],
+                data["detail"],
+                "Rp" + format(data["total"], ","),
+                data["waktu"]
+            ])
+            ditemukan = True
+    if ditemukan:
+        print(tabel)
+    else:
+        print("Belum ada transaksi.")
