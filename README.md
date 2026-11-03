@@ -210,6 +210,8 @@ Function ini digunakan oleh admin untuk menghapus barang yang sudah tersimpan di
 
 Function ini merupakan menu khusus untuk mengelola data barang atau yang biasa disebut CRUD, yaitu Create, Read, Update, dan Delete. Pada menu ini, program memberikan lima pilihan, yaitu menampilkan barang, menambahkan barang, mengubah barang, menghapus barang, dan kembali ke menu sebelumnya. Setiap pilihan akan menjalankan function yang sesuai dengan kebutuhan admin. Di sini juga digunakan perulangan while True agar admin dapat melakukan pengelolaan barang secara berulang kali tanpa harus kembali ke menu utama. Contohnya, jika admin memilih opsi nomor 2, program akan menjalankan function tambah_barang(). Setelah selesai, admin dapat kembali ke menu pengelolaan barang dan memilih opsi lainnya.
 
+---
+
 # 12. Cetak Invoice
 <img width="350" height="311" alt="image" src="https://github.com/user-attachments/assets/6c72c03b-6bc3-4f70-90af-3a1dc1396091" />
 
@@ -224,6 +226,8 @@ Function ini digunakan untuk menampilkan invoice sebagai bukti transaksi yang di
 
 Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, program akan membaca data pengguna dari file user.json dan data transaksi dari file transaksi.json. Setelah itu, program akan mencari akun berdasarkan username yang sedang login. Jika akun ditemukan, program akan menampilkan saldo saat ini. Kemudian, pengguna diminta memasukkan nominal top up. Pada bagian ini terdapat validasi menggunakan try-except untuk memastikan nominal yang dimasukkan berupa angka bulat, minimal Rp1, dan maksimal Rp10.000.000. Setelah nominal sesuai, program akan meminta konfirmasi kepada pengguna. Jika pengguna menyetujui, saldo akan ditambahkan dan data akun disimpan kembali ke user.json. Selanjutnya, program akan membuat kode transaksi yang terdiri dari awalan TRX, tiga angka acak, dan nomor urut transaksi. Data transaksi kemudian disimpan ke dalam transaksi.json dan ditampilkan melalui function cetak_invoice(). Contohnya, pengguna memiliki saldo Rp50.000 dan melakukan top up sebesar Rp100.000. Setelah berhasil, saldo pengguna akan menjadi Rp150.000 dan sistem akan menampilkan invoice top up.
 
+---
+
 # 14. Beli Barang
 <img width="413" height="623" alt="image" src="https://github.com/user-attachments/assets/521b6dbf-c130-47ce-a725-d4c6d3925592" />
 <br>
@@ -235,12 +239,56 @@ Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, p
 
 Function ini digunakan oleh pengguna untuk melakukan pembelian barang yang tersedia di dalam sistem. Pertama, program akan membaca data pengguna, barang, dan transaksi dari masing-masing file JSON. Kemudian, program akan mencari akun pengguna berdasarkan username yang sedang login dan menampilkan daftar barang menggunakan PrettyTable. Setelah itu, pengguna diminta memasukkan nomor barang yang ingin dibeli. Program akan memeriksa apakah barang ditemukan, apakah stok masih tersedia, dan apakah jumlah pembelian tidak melebihi stok yang tersedia. Selanjutnya, program menghitung total pembayaran dengan mengalikan harga barang dan jumlah pembelian. Sebelum pembayaran dilakukan, program akan memeriksa apakah saldo pengguna mencukupi. Jika saldo mencukupi, pengguna akan diminta memberikan konfirmasi pembayaran. Apabila pengguna menyetujui, saldo akan dikurangi sesuai total pembelian dan stok barang juga akan berkurang sesuai jumlah yang dibeli. Terakhir, perubahan data pengguna dan barang akan disimpan ke dalam file JSON. Program juga akan membuat data transaksi baru dan menampilkan invoice sebagai bukti pembelian. Contohnya, pengguna membeli dua Kaos FT dengan harga masing-masing Rp100.000. Maka total pembayaran adalah Rp200.000. Jika saldo mencukupi dan pengguna menyetujui pembayaran, saldo akan berkurang Rp200.000 dan stok barang berkurang sebanyak dua buah.
 
+---
+
 # 15. Riwayat Transaksi
 <img width="392" height="494" alt="image" src="https://github.com/user-attachments/assets/4e471ad2-a8b8-4c8b-ac02-051c153b668f" />
 
 Function ini digunakan untuk menampilkan riwayat transaksi yang telah dilakukan di dalam sistem. Pertama, program akan membaca data transaksi dari file transaksi.json. Jika file belum tersedia, program akan menggunakan daftar kosong. Kemudian, program membuat tabel menggunakan PrettyTable dengan enam kolom, yaitu kode transaksi, username, jenis transaksi, detail, total pembayaran, dan waktu transaksi. Pada bagian ini terdapat parameter username=None yang digunakan untuk membedakan tampilan riwayat transaksi antara admin dan user. Jika parameter username tidak diberikan, program akan menampilkan seluruh transaksi. Namun, jika username diberikan, program hanya akan menampilkan transaksi milik pengguna tersebut. Contohnya, ketika admin memilih menu riwayat transaksi, seluruh transaksi dari semua pengguna akan ditampilkan. Sementara itu, jika user membuka riwayat transaksi, hanya transaksi yang dilakukan oleh akun tersebut yang akan ditampilkan.
 
+---
 
+# 16. Laporan Admin
+
+<img width="613" height="640" alt="image" src="https://github.com/user-attachments/assets/2b16274f-346c-4b03-a871-1bdedd0c7bf3" />
+
+Function ini digunakan untuk menampilkan laporan penjualan khusus admin. Program akan menghitung total pendapatan, jumlah transaksi pembelian, serta jumlah barang yang terjual. Selain itu, program juga mencari produk dengan penjualan terbanyak untuk mengetahui produk terlaris. Hasil perhitungan tersebut kemudian ditampilkan di terminal.
+
+---
+
+# 17. Tampilkan User
+
+<img width="613" height="286" alt="image" src="https://github.com/user-attachments/assets/78bb4be3-cca9-4b7c-a57e-20c0436d5753" />
+
+
+Function ini digunakan oleh admin untuk melihat daftar pengguna yang telah terdaftar. Program membaca data dari user.json, kemudian menampilkan username, role, dan saldo menggunakan PrettyTable. Di sini hanya akun dengan role user yang akan ditampilkan.
+
+---
+
+# 18. Menu Admin
+
+<img width="613" height="402" alt="image" src="https://github.com/user-attachments/assets/850b081a-4402-4c7b-8bc8-8fa470701a00" />
+
+
+Function ini merupakan halaman utama khusus admin setelah berhasil login. Terdapat lima pilihan, yaitu kelola barang, lihat pengguna, lihat seluruh transaksi, laporan penjualan, dan logout. Setiap pilihan akan menjalankan function yang sesuai. Jika admin memilih logout, program akan kembali ke menu utama.
+
+---
+
+# 19. Menu User
+
+<img width="613" height="653" alt="image" src="https://github.com/user-attachments/assets/2d57cf3a-5237-4c25-b54c-cd390d028663" />
+
+Function ini merupakan halaman utama khusus pengguna setelah berhasil login. Menu ini memiliki lima pilihan, yaitu melihat barang, top up saldo, membeli barang, melihat riwayat transaksi, dan logout. Program juga menampilkan username serta saldo pengguna. Setiap pilihan akan diarahkan ke function yang sesuai dengan kebutuhan pengguna.
+
+---
+
+# 20. Main Program
+
+<img width="613" height="115" alt="image" src="https://github.com/user-attachments/assets/dc413889-8039-40f8-bad4-67ce3365cb16" />
+
+Pada bagian terakhir program, terdapat perulangan while True yang digunakan untuk menjalankan menu_utama(). Selain itu, terdapat try-except untuk menangani KeyboardInterrupt dan EOFError. Jika pengguna menekan Ctrl+C atau terjadi EOFError, program akan menampilkan pesan "No No Yaa!" dan mencoba menjalankan kembali menu utama. Namun, jika pengguna memilih keluar aplikasi secara normal, program akan berhenti menggunakan break.
+
+---
 
 
 # Screenshot Output
