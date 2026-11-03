@@ -3,13 +3,13 @@
         "no": "1",
         "nama": "PDH KBM FT",
         "harga": 165000,
-        "stok": 5
+        "stok": 20
     },
     {
         "no": "2",
         "nama": "Kaos FT",
         "harga": 100000,
-        "stok": 64
+        "stok": 50
     },
     {
         "no": "3",
@@ -27,12 +27,12 @@
         "no": "5",
         "nama": "Sticker FT",
         "harga": 5000,
-        "stok": 27
+        "stok": 30
     },
     {
         "no": "6",
         "nama": "Kaos Kaki FT",
         "harga": 15000,
-        "stok": 1
+        "stok": 50
     }
 ]
