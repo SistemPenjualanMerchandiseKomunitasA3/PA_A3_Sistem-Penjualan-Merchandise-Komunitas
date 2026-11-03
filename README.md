@@ -275,7 +275,7 @@ Pada bagian terakhir program, terdapat perulangan while True yang digunakan untu
 ## Login Sebagai Admin
 <img width="392" height="116" alt="Screenshot 2026-10-30 000741" src="https://github.com/user-attachments/assets/4a473486-f982-4ffc-be8a-10fd9ad38247" />
 <br>
-<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/6313236a-bef3-4dea-97ba-49a33c509f3f" />
+<img width="392" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/6313236a-bef3-4dea-97ba-49a33c509f3f" />
 
 Proses dimulai dari Menu utama dengan tiga opsi utama: Registrasi, Login, Keluar Aplikasi. 
 Setelah pengguna berhasil login sebagai Admin, sistem akan menampilkan Menu Admin yang berisi beberapa fitur utama, yaitu: 
@@ -298,7 +298,7 @@ Cuplikan ini menampilkan tahapan navigasi setelah Admin memilih opsi “Kelola B
 
 ## 1. Tampilkan Barang
 
-<img width="406" height="249" alt="Screenshot 2026-10-30 001845" src="https://github.com/user-attachments/assets/1ad66c98-d93a-4932-8640-ec3e6baa1bd4" />
+<img width="392" height="249" alt="Screenshot 2026-10-30 001845" src="https://github.com/user-attachments/assets/1ad66c98-d93a-4932-8640-ec3e6baa1bd4" />
 
 Cuplikan ini menampilkan hasil dari pilihan menu “Tampilkan Barang” pada bagian Kelola Barang. Pada tahap ini, sistem menampilkan tabel berisi seluruh data barang yang tersimpan di database, dengan atribut sebagai berikut:
 
@@ -311,15 +311,15 @@ Tampilan berbasis teks ini dibuat untuk memberikan kemudahan dalam memantau data
 
 ## 2. Tambah Barang
 
-<img width="394" height="137" alt="Screenshot 2026-10-30 001854" src="https://github.com/user-attachments/assets/ff607e7b-4ff9-49e8-ae86-c2b062150f63" />
+<img width="392" height="137" alt="Screenshot 2026-10-30 001854" src="https://github.com/user-attachments/assets/ff607e7b-4ff9-49e8-ae86-c2b062150f63" />
 <br>
-<img width="388" height="140" alt="Screenshot 2026-10-30 001939" src="https://github.com/user-attachments/assets/e2df865e-584e-4eb1-83b3-e06a35434e67" />
+<img width="392" height="140" alt="Screenshot 2026-10-30 001939" src="https://github.com/user-attachments/assets/e2df865e-584e-4eb1-83b3-e06a35434e67" />
 
 Cuplikan ini menunjukkan proses penambahan barang baru ke dalam sistem. Pengguna menginput data seperti nomor barang, nama barang, harga barang, stok barang, kemudian sistem menyimpan data tersebut ke dalam file JSON. Setelah proses berhasil, sistem menampilkan pesan “Barang berhasil ditambahkan.” dan memperbarui daftar barang yang tersedia di terminal.
 
 ## 3. Ubah Barang
 
-<img width="356" height="320" alt="Screenshot 2026-10-30 002115" src="https://github.com/user-attachments/assets/6886b043-00ec-46bc-9204-b5512a665fd3" />
+<img width="392" height="320" alt="Screenshot 2026-10-30 002115" src="https://github.com/user-attachments/assets/6886b043-00ec-46bc-9204-b5512a665fd3" />
 
 Gambar ini memperlihatkan proses pengubahan data barang. Pengguna memasukkan nomor barang yang ingin diperbarui, kemudian sistem menampilkan data barang sebelumnya. Pengguna dapat mengubah nomor barang, nama barang, harga, maupun stok. Jika ada informasi yang tidak ingin diubah, pengguna cukup mengosongkan input atau memilih untuk tidak melakukan perubahan. Setelah proses selesai, sistem menyimpan data terbaru dan menampilkan pesan “Data barang berhasil diperbarui.”
 
@@ -333,7 +333,7 @@ Cuplikan ini menunjukkan proses penghapusan data barang dari sistem. Pengguna me
 
 ## 5. Kembali
 
-<img width="399" height="193" alt="Screenshot 2026-10-30 002216" src="https://github.com/user-attachments/assets/6b442dd0-174d-47e5-8225-3380ae6ce482" />
+<img width="392" height="193" alt="Screenshot 2026-10-30 002216" src="https://github.com/user-attachments/assets/6b442dd0-174d-47e5-8225-3380ae6ce482" />
 
 Cuplikan ini menunjukan proses untuk kembali ke menu utama admin.
 
@@ -353,9 +353,9 @@ Setelah admin memilih opsi 2 "Lihat Pengguna" pada Menu Admin, program menampilk
 Setelah admin memilih opsi 3 "Lihat seluruh transaksi", program menampilkan tabel seluruh transaksi dari semua pengguna. Kolom yang ditampilkan adalah Kode, Username, Jenis (TOP UP atau PEMBELIAN), Detail, Total, dan Waktu. Setelah itu program menunggu admin menekan Enter untuk melanjutkan.
 
 # 4. Laporan Penjualan
-<img width="384" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
+<img width="392" height="140" alt="Screenshot 2026-10-30 001754" src="https://github.com/user-attachments/assets/4e4608ba-9803-46db-aa91-f88afaf0a3bf" />
 <br>
-<img width="373" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/9aefbd80-42a1-4bbe-bddb-940a63955cf3" />
+<img width="392" height="132" alt="Screenshot 2026-10-30 002336" src="https://github.com/user-attachments/assets/9aefbd80-42a1-4bbe-bddb-940a63955cf3" />
 
 Setelah admin memilih opsi 4 "Laporan Penjualan", program akan menampilkan laporan penjualan, Laporan ini dihitung dari seluruh transaksi berjenis pembelian. Setelah itu program menunggu admin menekan Enter untuk melanjutkan.
 
