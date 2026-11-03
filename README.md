@@ -110,7 +110,7 @@ Di awal program ini kami menggunakan beberapa library dan modul seperti os, time
 
 ## 2. Fungsi Membersihkan Terminal
 
-
+<img width="613" height="41" alt="image" src="https://github.com/user-attachments/assets/fea68457-409c-4b75-8d82-4b7bc2dd1fab" />
 
 Pada function ini kami menggunakan os.system("cls") yang berfungsi untuk membersihkan tampilan layar terminal. Tujuannya agar setiap kali pengguna berpindah dari satu menu ke menu lainnya, tampilan sebelumnya tidak menumpuk sehingga program terlihat lebih rapi. Contohnya, ketika pengguna selesai melakukan login dan masuk ke menu admin, layar terminal akan dibersihkan terlebih dahulu sebelum menu admin ditampilkan.
 
@@ -119,8 +119,7 @@ Pada function ini kami menggunakan os.system("cls") yang berfungsi untuk members
 ## 3. Fungsi Keyboard Interrupt
 <img width="613" height="114" alt="image" src="https://github.com/user-attachments/assets/7a04f79e-a0c7-497a-b6ad-ebc468767acd" />
 
-Pada function ini kami membuat sebuah function khusus untuk menangani input dari pengguna. Di dalamnya terdapat perulangan while T<img width="608" height="126" alt="Screenshot 2026-11-03 221613" src="https://github.com/user-attachments/assets/8513e719-23f8-4c03-a363-64534da9361d" />
-rue serta percabangan try-except yang digunakan untuk menangani error ketika pengguna menekan tombol Ctrl+C atau terjadi EOFError. Jika salah satu kondisi tersebut terjadi, program akan menampilkan pesan "No No Yaa!" tanpa langsung menghentikan program. Contohnya, ketika program meminta pengguna memasukkan username kemudian pengguna menekan Ctrl+C, program akan menampilkan pesan tersebut dan kembali meminta input. Dengan adanya function ini, penanganan input dapat digunakan secara berulang di berbagai bagian program.
+Pada function ini kami membuat sebuah function khusus untuk menangani input dari pengguna. Di dalamnya terdapat perulangan while True serta percabangan try-except yang digunakan untuk menangani error ketika pengguna menekan tombol Ctrl+C atau terjadi EOFError. Jika salah satu kondisi tersebut terjadi, program akan menampilkan pesan "No No Yaa!" tanpa langsung menghentikan program. Contohnya, ketika program meminta pengguna memasukkan username kemudian pengguna menekan Ctrl+C, program akan menampilkan pesan tersebut dan kembali meminta input. Dengan adanya function ini, penanganan input dapat digunakan secara berulang di berbagai bagian program.
 
 ---
 
