@@ -3,10 +3,10 @@
 # Anggota dan Peran :
 | Anggota | Peran |
 | --- | --- |
-| Salwa Annisa Nur Fadhila	(2609116010) | --- |
-| Muhammad Favian Daffa	(2609116021) | --- |
-| Mutiara Zyahra Al Gazali (2609116026) | --- |
-| Fahry Alfisyahr Razak (2609116028) | --- |
+| Salwa Annisa Nur Fadhila	(2609116010) | Konsep, Laporan, Pengecekan |
+| Muhammad Favian Daffa	(2609116021) | Program, Coding, Flowchart, Pengembangan |
+| Mutiara Zyahra Al Gazali (2609116026) | Konsep, Laporan, Program  |
+| Fahry Alfisyahr Razak (2609116028) | Program, Flowchart, Konsep |
 
 # Sistem Penjualan Komunitas
 
