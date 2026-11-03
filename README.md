@@ -95,6 +95,7 @@ Dalam proses pembelian, sistem memeriksa ketersediaan stok dan kecukupan saldo. 
 | 16 | tampilkan_users() | Menampilkan daftar user beserta peran dan saldo yang dimiliki |
 | 17 | menu_admin() | Menampilkan menu khusus Admin untuk mengelola barang, melihat user, memeriksa transaksi, dan melihat laporan penjualan |
 | 18 | menu_user() | Menampilkan menu user untuk melihat barang, mengisi saldo, membeli barang, dan melihat riwayat transaksi |
+| 19 | inisialisasi_data() | Membuat data awal berupa akun admin, enam barang merchandise, serta file transaksi jika belum tersedia |
 
 
 
@@ -266,14 +267,17 @@ Function ini merupakan halaman utama khusus pengguna setelah berhasil login. Men
 <img width="613" height="675" alt="image" src="https://github.com/user-attachments/assets/19614d8a-7a7c-4f73-8362-d0a5c721f818" /><br>
 <img width="613" height="186" alt="image" src="https://github.com/user-attachments/assets/2a892952-6ab2-4492-b619-4e2bf0830023" /> <br>
 
+Pada bagian ini, function inisialisasi_data() digunakan untuk membuat data awal berupa akun admin dan enam barang. Program akan memeriksa apakah file JSON sudah tersedia. Jika belum, file akan dibuat secara otomatis
+
 ---
 
 # 21. Main Program
 
 <img width="613" height="147" alt="image" src="https://github.com/user-attachments/assets/b59a3fb8-a434-4a00-9a70-dc3a48d4f225" /><br>
 
-Pada bagian terakhir program, terdapat perulangan while True yang digunakan untuk menjalankan menu_utama(). Selain itu, terdapat try-except untuk menangani KeyboardInterrupt dan EOFError. Jika pengguna menekan Ctrl+C atau terjadi EOFError, program akan menampilkan pesan "No No Yaa!" dan mencoba menjalankan kembali menu utama. Namun, jika pengguna memilih keluar aplikasi secara normal, program akan berhenti menggunakan break.
+Pada bagian terakhir program, function inisialisasi_data() dipanggil sebelum menu utama dijalankan. Kemudian, terdapat perulangan while True dan try-except untuk menangani KeyboardInterrupt dan EOFError. Jika terjadi kesalahan tersebut, program akan menampilkan pesan "No No Yaa!" dan kembali ke menu utama
 
+---
 
 # Screenshot Output
 
