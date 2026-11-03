@@ -199,30 +199,32 @@ Function ini digunakan oleh admin untuk menambahkan barang baru ke dalam sistem.
 Function ini digunakan oleh admin untuk mengubah informasi barang yang sudah tersimpan di dalam sistem. Pertama, program akan membaca data dari file barang.json, kemudian menampilkan seluruh daftar barang menggunakan PrettyTable. Setelah itu, admin diminta memasukkan nomor barang yang ingin diubah. Program akan mencari barang tersebut menggunakan perulangan for. Jika barang tidak ditemukan, program akan menampilkan pesan bahwa barang tidak tersedia. Namun, jika barang ditemukan, admin diberikan pilihan untuk mengubah nama, harga, dan stok barang. Pada bagian nama, admin cukup memasukkan nama baru. Jika input dikosongkan, nama barang akan tetap menggunakan data sebelumnya. Kemudian, untuk harga dan stok, program memberikan pilihan menggunakan input y atau n. Jika admin memilih y, program akan meminta data baru dan melakukan validasi angka. Terakhir, seluruh perubahan akan disimpan kembali ke file barang.json. Contohnya, admin ingin mengubah harga Kaos FT dari Rp100.000 menjadi Rp120.000. Admin cukup memilih barang tersebut, kemudian memilih y pada bagian ubah harga dan memasukkan harga baru.
 
 # 10. Hapus Barang
-<img width="450" height="424" alt="image" src="https://github.com/user-attachments/assets/038fcfc0-3ebf-4af3-922d-25e03a2cd000" />
-<br>
-<img width="446" height="473" alt="image" src="https://github.com/user-attachments/assets/608e3575-42b8-40f7-941c-daca3273359c" />
+<img width="613" height="299" alt="Screenshot 2026-11-03 220605" src="https://github.com/user-attachments/assets/90d2b430-e84b-4523-8fc2-12071ffc6d58" />
+<img width="613" height="625" alt="Screenshot 2026-11-03 220551" src="https://github.com/user-attachments/assets/de323b59-bb39-445f-81e8-5921f3fa54d6" />
+
 
 Function ini digunakan oleh admin untuk menghapus barang yang sudah tersimpan di dalam sistem. Pertama, program akan membaca data barang dari file barang.json. Jika data tersedia, program akan menampilkan daftar barang menggunakan PrettyTable. Kemudian, admin diminta memasukkan nomor barang yang ingin dihapus. Program akan mencari barang berdasarkan nomor yang dimasukkan. Jika barang ditemukan, program akan meminta konfirmasi penghapusan menggunakan pilihan y atau n. Jika admin memilih y, barang akan dihapus menggunakan perintah remove(). Namun, jika admin memilih n, proses penghapusan akan dibatalkan. Setelah penghapusan berhasil, data terbaru akan disimpan kembali ke file barang.json. Contohnya, admin ingin menghapus barang dengan nomor KBMFT6. Setelah memilih barang tersebut dan memberikan konfirmasi y, barang akan dihapus dari daftar barang.
 
 # 11. Menu Kelola Barang
-<img width="515" height="533" alt="image" src="https://github.com/user-attachments/assets/ee75d123-a93e-4314-b022-e17589888421" />
+<img width="613" height="515" alt="image" src="https://github.com/user-attachments/assets/57e55b24-c6ab-43d8-a870-9bdbf37e6895" />
 
 Function ini merupakan menu khusus untuk mengelola data barang atau yang biasa disebut CRUD, yaitu Create, Read, Update, dan Delete. Pada menu ini, program memberikan lima pilihan, yaitu menampilkan barang, menambahkan barang, mengubah barang, menghapus barang, dan kembali ke menu sebelumnya. Setiap pilihan akan menjalankan function yang sesuai dengan kebutuhan admin. Di sini juga digunakan perulangan while True agar admin dapat melakukan pengelolaan barang secara berulang kali tanpa harus kembali ke menu utama. Contohnya, jika admin memilih opsi nomor 2, program akan menjalankan function tambah_barang(). Setelah selesai, admin dapat kembali ke menu pengelolaan barang dan memilih opsi lainnya.
 
 ---
 
 # 12. Cetak Invoice
-<img width="350" height="311" alt="image" src="https://github.com/user-attachments/assets/6c72c03b-6bc3-4f70-90af-3a1dc1396091" />
+
+<img width="613" height="302" alt="image" src="https://github.com/user-attachments/assets/941c8169-60e3-4428-b6f9-89df226a68dc" />
+
 
 Function ini digunakan untuk menampilkan invoice sebagai bukti transaksi yang dilakukan oleh pengguna. Di dalam function ini, kami menggunakan PrettyTable dengan dua kolom, yaitu keterangan dan detail. Informasi yang ditampilkan meliputi kode transaksi, waktu transaksi, username, jenis transaksi, detail transaksi, total pembayaran, dan sisa saldo setelah transaksi. Seluruh informasi tersebut diambil dari parameter data yang dikirimkan oleh function pemanggil. Contohnya, setelah pengguna berhasil melakukan pembelian Kaos FT sebanyak dua buah, program akan menampilkan invoice yang berisi total pembayaran sebesar Rp200.000 beserta sisa saldo pengguna.
 
 # 13. Top Up Saldo
-<img width="453" height="437" alt="image" src="https://github.com/user-attachments/assets/1cdda88c-14e1-4f7d-b8d1-92c1f601df4d" />
-<br>
-<img width="655" height="625" alt="image" src="https://github.com/user-attachments/assets/13662eb8-f151-4643-bc5f-bb33c05840ab" />
-<br>
-<img width="588" height="86" alt="image" src="https://github.com/user-attachments/assets/35989e57-7205-4de3-a26b-b5ea0022cfb9" />
+<img width="613" height="656" alt="Screenshot 2026-11-03 220126" src="https://github.com/user-attachments/assets/68832910-020d-48f1-a95a-8cecb88af883" />
+<img width="613" height="470" alt="Screenshot 2026-11-03 220147" src="https://github.com/user-attachments/assets/10aa5687-b166-454c-9565-5c0fae8ee601" />
+
+
+
 
 Function ini digunakan untuk melakukan pengisian saldo akun pengguna. Pertama, program akan membaca data pengguna dari file user.json dan data transaksi dari file transaksi.json. Setelah itu, program akan mencari akun berdasarkan username yang sedang login. Jika akun ditemukan, program akan menampilkan saldo saat ini. Kemudian, pengguna diminta memasukkan nominal top up. Pada bagian ini terdapat validasi menggunakan try-except untuk memastikan nominal yang dimasukkan berupa angka bulat, minimal Rp1, dan maksimal Rp10.000.000. Setelah nominal sesuai, program akan meminta konfirmasi kepada pengguna. Jika pengguna menyetujui, saldo akan ditambahkan dan data akun disimpan kembali ke user.json. Selanjutnya, program akan membuat kode transaksi yang terdiri dari awalan TRX, tiga angka acak, dan nomor urut transaksi. Data transaksi kemudian disimpan ke dalam transaksi.json dan ditampilkan melalui function cetak_invoice(). Contohnya, pengguna memiliki saldo Rp50.000 dan melakukan top up sebesar Rp100.000. Setelah berhasil, saldo pengguna akan menjadi Rp150.000 dan sistem akan menampilkan invoice top up.
 
