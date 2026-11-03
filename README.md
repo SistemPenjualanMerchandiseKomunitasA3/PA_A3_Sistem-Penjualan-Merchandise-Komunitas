@@ -110,26 +110,15 @@ Di awal program ini kami menggunakan beberapa library dan modul seperti os, time
 
 ## 2. Fungsi Membersihkan Terminal
 
-```python
-def bersih():   
-    os.system("cls")
-```
+<img width="613" height="114" alt="image" src="https://github.com/user-attachments/assets/7a04f79e-a0c7-497a-b6ad-ebc468767acd" />
 
 Pada function ini kami menggunakan os.system("cls") yang berfungsi untuk membersihkan tampilan layar terminal. Tujuannya agar setiap kali pengguna berpindah dari satu menu ke menu lainnya, tampilan sebelumnya tidak menumpuk sehingga program terlihat lebih rapi. Contohnya, ketika pengguna selesai melakukan login dan masuk ke menu admin, layar terminal akan dibersihkan terlebih dahulu sebelum menu admin ditampilkan.
 
 ---
 
 ## 3. Fungsi Keyboard Interrupt
-```python
-def asalpicik(pesan):
-    while True:
-        try:
-            return input(pesan)
-        except KeyboardInterrupt:
-            print("\nNo No Yaa!\n")
-        except EOFError:
-            print("\nNo No Yaa!")
-```
+
+<img width="613" height="326" alt="image" src="https://github.com/user-attachments/assets/4fc42b9f-6c7c-49a0-8949-3d8e50b3a3bf" />
 
 Pada function ini kami membuat sebuah function khusus untuk menangani input dari pengguna. Di dalamnya terdapat perulangan while True serta percabangan try-except yang digunakan untuk menangani error ketika pengguna menekan tombol Ctrl+C atau terjadi EOFError. Jika salah satu kondisi tersebut terjadi, program akan menampilkan pesan "No No Yaa!" tanpa langsung menghentikan program. Contohnya, ketika program meminta pengguna memasukkan username kemudian pengguna menekan Ctrl+C, program akan menampilkan pesan tersebut dan kembali meminta input. Dengan adanya function ini, penanganan input dapat digunakan secara berulang di berbagai bagian program.
 
@@ -137,31 +126,8 @@ Pada function ini kami membuat sebuah function khusus untuk menangani input dari
 
 ## 4. Menu Utama
 
-```python
-def menu_utama():
-    while True:
-        bersih()
-        print("================================================================")
-        print("|                           Menu Utama                         |")
-        print("================================================================")
-        print("| 1. Registrasi                                                |")
-        print("| 2. Login                                                     |")
-        print("| 3. Keluar Aplikasi                                           |")
-        print("================================================================")
-        pilihan = asalpicik(("Pilih menu: "))
-        if pilihan == "1":
-            registrasi()
-            asalpicik("\nTekan Enter Untuk Melanjutkan ")
-        elif pilihan == "2":
-            login()
-            asalpicik("\nTekan Enter untuk kembali ke menu utama ")
-        elif pilihan == "3":
-            print("Program Selesai")
-            break
-        else:
-            print("Pilihan tidak tersedia")
-            time.sleep(1)
-```
+<img width="613" height="329" alt="image" src="https://github.com/user-attachments/assets/e11732b5-fae1-4569-a2ca-ec522ed2b41a" />
+
 Pada function ini, program akan menampilkan halaman menu utama dengan memberikan tiga pilihan, yaitu registrasi, login, dan keluar aplikasi. Di sini kami menggunakan perulangan while True agar menu dapat terus ditampilkan sampai pengguna memilih opsi keluar. Kemudian, terdapat percabangan if, elif, dan else untuk menentukan tindakan berdasarkan pilihan pengguna. Jika pengguna memilih angka 1, program akan menjalankan function registrasi(). Jika memilih angka 2, program akan menjalankan function login(). Sementara itu, jika memilih angka 3, program akan menampilkan pesan bahwa program selesai dan menghentikan perulangan menggunakan break. Apabila pengguna memasukkan pilihan selain ketiga opsi tersebut, program akan menampilkan pesan bahwa pilihan tidak tersedia.
 
 
